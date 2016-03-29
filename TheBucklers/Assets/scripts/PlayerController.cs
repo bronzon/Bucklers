@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour {
 		if (direction.magnitude > float.Epsilon) {
 			float actualSpeed = speedScale.Scale * baseSpeed;
 			Vector2 estimatedPos = new Vector2(transform.position.x + direction.x*actualSpeed, transform.position.y + direction.y*actualSpeed);
-			RaycastHit2D hit = Physics2D.Linecast (transform.position, estimatedPos);
+			RaycastHit2D hit = Physics2D.Linecast (transform.position, estimatedPos, 1 << LayerMask.NameToLayer("Background"));
 			if (hit.collider == null) {
 				transform.position = estimatedPos;
 			}

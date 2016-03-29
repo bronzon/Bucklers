@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 3b340236fdb05a248b504665f35ad5b9
-timeCreated: 1459106137
+timeCreated: 1459278450
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -165,8 +165,8 @@ TextureImporter:
         y: 899
         width: 23
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_1
@@ -176,8 +176,8 @@ TextureImporter:
         y: 899
         width: 23
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_2
@@ -187,8 +187,8 @@ TextureImporter:
         y: 899
         width: 23
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_3
@@ -198,8 +198,8 @@ TextureImporter:
         y: 899
         width: 23
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_4
@@ -209,8 +209,8 @@ TextureImporter:
         y: 899
         width: 23
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_5
@@ -220,8 +220,8 @@ TextureImporter:
         y: 899
         width: 23
         height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_6
@@ -231,8 +231,8 @@ TextureImporter:
         y: 843
         width: 26
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_7
@@ -242,8 +242,8 @@ TextureImporter:
         y: 843
         width: 26
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_8
@@ -253,8 +253,8 @@ TextureImporter:
         y: 843
         width: 26
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_9
@@ -264,8 +264,8 @@ TextureImporter:
         y: 843
         width: 26
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_10
@@ -275,8 +275,8 @@ TextureImporter:
         y: 843
         width: 26
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_11
@@ -286,8 +286,8 @@ TextureImporter:
         y: 843
         width: 26
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_12
@@ -297,8 +297,8 @@ TextureImporter:
         y: 788
         width: 26
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_13
@@ -308,8 +308,8 @@ TextureImporter:
         y: 788
         width: 26
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_14
@@ -319,8 +319,8 @@ TextureImporter:
         y: 788
         width: 26
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_15
@@ -330,8 +330,8 @@ TextureImporter:
         y: 788
         width: 21
         height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_16
@@ -341,8 +341,8 @@ TextureImporter:
         y: 788
         width: 19
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_17
@@ -352,16 +352,16 @@ TextureImporter:
         y: 788
         width: 32
         height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -12, y: 22.5}
-        - {x: -16, y: 20.5}
-        - {x: -16, y: -22.5}
-        - {x: 16, y: -22.5}
-        - {x: 16, y: 16.5}
-        - {x: 14, y: 22.5}
+      - - {x: -12, y: 45}
+        - {x: -16, y: 43}
+        - {x: -16, y: 0}
+        - {x: 16, y: 0}
+        - {x: 16, y: 39}
+        - {x: 14, y: 45}
     - name: Guybrush_18
       rect:
         serializedVersion: 2
@@ -369,8 +369,8 @@ TextureImporter:
         y: 788
         width: 18
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_19
@@ -380,8 +380,8 @@ TextureImporter:
         y: 788
         width: 19
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_20
@@ -391,8 +391,8 @@ TextureImporter:
         y: 788
         width: 31
         height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_21
@@ -402,8 +402,8 @@ TextureImporter:
         y: 733
         width: 24
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_22
@@ -413,8 +413,8 @@ TextureImporter:
         y: 733
         width: 25
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_23
@@ -424,8 +424,8 @@ TextureImporter:
         y: 733
         width: 28
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_24
@@ -435,8 +435,8 @@ TextureImporter:
         y: 733
         width: 24
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_25
@@ -446,8 +446,8 @@ TextureImporter:
         y: 733
         width: 25
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_26
@@ -457,8 +457,8 @@ TextureImporter:
         y: 733
         width: 28
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_27
@@ -468,8 +468,8 @@ TextureImporter:
         y: 677
         width: 24
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_28
@@ -479,8 +479,8 @@ TextureImporter:
         y: 677
         width: 25
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_29
@@ -490,8 +490,8 @@ TextureImporter:
         y: 677
         width: 27
         height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_30
@@ -501,8 +501,8 @@ TextureImporter:
         y: 677
         width: 24
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_31
@@ -512,8 +512,8 @@ TextureImporter:
         y: 677
         width: 25
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_32
@@ -523,8 +523,8 @@ TextureImporter:
         y: 677
         width: 28
         height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_33
@@ -534,22 +534,22 @@ TextureImporter:
         y: 623
         width: 33
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 10.5, y: -23.5}
-        - {x: 9.5, y: -19.5}
-        - {x: 16.5, y: -0.5}
-        - {x: 16.5, y: 8.5}
-        - {x: 8.5, y: 23.5}
-        - {x: -7.5, y: 23.5}
-        - {x: -16.5, y: 10.5}
-        - {x: -16.5, y: -14.5}
-        - {x: -15.5, y: -23.5}
-        - {x: -4.5, y: -23.5}
-        - {x: -4.5, y: -21.5}
-        - {x: -4.5, y: -23.5}
+      - - {x: 10.5, y: 0}
+        - {x: 9.5, y: 4}
+        - {x: 16.5, y: 23}
+        - {x: 16.5, y: 32}
+        - {x: 8.5, y: 47}
+        - {x: -7.5, y: 47}
+        - {x: -16.5, y: 34}
+        - {x: -16.5, y: 9}
+        - {x: -15.5, y: 0}
+        - {x: -4.5, y: 0}
+        - {x: -4.5, y: 2}
+        - {x: -4.5, y: 0}
     - name: Guybrush_34
       rect:
         serializedVersion: 2
@@ -557,21 +557,21 @@ TextureImporter:
         y: 623
         width: 35
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 10.5, y: -23.5}
-        - {x: 9.5, y: -19.5}
-        - {x: 17.5, y: 10.5}
-        - {x: 17.5, y: 23.5}
-        - {x: -8.5, y: 23.5}
-        - {x: -17.5, y: 12.5}
-        - {x: -17.5, y: -9.5}
-        - {x: -15.5, y: -23.5}
-        - {x: -4.5, y: -23.5}
-        - {x: -4.5, y: -21.5}
-        - {x: -4.5, y: -23.5}
+      - - {x: 10.5, y: 0}
+        - {x: 9.5, y: 4}
+        - {x: 17.5, y: 34}
+        - {x: 17.5, y: 47}
+        - {x: -8.5, y: 47}
+        - {x: -17.5, y: 36}
+        - {x: -17.5, y: 14}
+        - {x: -15.5, y: 0}
+        - {x: -4.5, y: 0}
+        - {x: -4.5, y: 2}
+        - {x: -4.5, y: 0}
     - name: Guybrush_35
       rect:
         serializedVersion: 2
@@ -579,15 +579,15 @@ TextureImporter:
         y: 623
         width: 34
         height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -11, y: 16.5}
-        - {x: -17, y: 12.5}
-        - {x: -17, y: -16.5}
-        - {x: 17, y: -16.5}
-        - {x: 17, y: 16.5}
+      - - {x: -11, y: 33}
+        - {x: -17, y: 29}
+        - {x: -17, y: 0}
+        - {x: 17, y: 0}
+        - {x: 17, y: 33}
     - name: Guybrush_36
       rect:
         serializedVersion: 2
@@ -595,8 +595,8 @@ TextureImporter:
         y: 623
         width: 26
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_37
@@ -606,8 +606,8 @@ TextureImporter:
         y: 623
         width: 27
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_38
@@ -617,8 +617,8 @@ TextureImporter:
         y: 623
         width: 28
         height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_39
@@ -628,8 +628,8 @@ TextureImporter:
         y: 568
         width: 25
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_40
@@ -639,8 +639,8 @@ TextureImporter:
         y: 568
         width: 28
         height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_41
@@ -650,17 +650,17 @@ TextureImporter:
         y: 568
         width: 37
         height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -4.5, y: 17.5}
-        - {x: -18.5, y: 10.5}
-        - {x: -18.5, y: -17.5}
-        - {x: 8.5, y: -17.5}
-        - {x: 18.5, y: -9.5}
-        - {x: 18.5, y: 3.5}
-        - {x: 10.5, y: 17.5}
+      - - {x: -4.5, y: 35}
+        - {x: -18.5, y: 28}
+        - {x: -18.5, y: 0}
+        - {x: 8.5, y: 0}
+        - {x: 18.5, y: 8}
+        - {x: 18.5, y: 21}
+        - {x: 10.5, y: 35}
     - name: Guybrush_42
       rect:
         serializedVersion: 2
@@ -668,21 +668,21 @@ TextureImporter:
         y: 568
         width: 37
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 9.5, y: -23.5}
-        - {x: 18.5, y: -1.5}
-        - {x: 18.5, y: 20.5}
-        - {x: 14.5, y: 23.5}
-        - {x: -12.5, y: 23.5}
-        - {x: -18.5, y: 11.5}
-        - {x: -18.5, y: -14.5}
-        - {x: -17.5, y: -23.5}
-        - {x: -6.5, y: -23.5}
-        - {x: -6.5, y: -21.5}
-        - {x: -6.5, y: -23.5}
+      - - {x: 9.5, y: 0}
+        - {x: 18.5, y: 22}
+        - {x: 18.5, y: 44}
+        - {x: 14.5, y: 47}
+        - {x: -12.5, y: 47}
+        - {x: -18.5, y: 35}
+        - {x: -18.5, y: 9}
+        - {x: -17.5, y: 0}
+        - {x: -6.5, y: 0}
+        - {x: -6.5, y: 2}
+        - {x: -6.5, y: 0}
     - name: Guybrush_43
       rect:
         serializedVersion: 2
@@ -690,8 +690,8 @@ TextureImporter:
         y: 568
         width: 26
         height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_44
@@ -701,18 +701,18 @@ TextureImporter:
         y: 568
         width: 34
         height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -7, y: 24}
-        - {x: -17, y: 9}
-        - {x: -17, y: -10}
-        - {x: -13, y: -24}
-        - {x: 15, y: -24}
-        - {x: 17, y: -12}
-        - {x: 17, y: 9}
-        - {x: 8, y: 24}
+      - - {x: -7, y: 48}
+        - {x: -17, y: 33}
+        - {x: -17, y: 14}
+        - {x: -13, y: 0}
+        - {x: 15, y: 0}
+        - {x: 17, y: 12}
+        - {x: 17, y: 33}
+        - {x: 8, y: 48}
     - name: Guybrush_45
       rect:
         serializedVersion: 2
@@ -720,8 +720,8 @@ TextureImporter:
         y: 514
         width: 28
         height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_46
@@ -731,18 +731,18 @@ TextureImporter:
         y: 514
         width: 32
         height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -7, y: 24}
-        - {x: -10, y: 23}
-        - {x: -16, y: 9}
-        - {x: -16, y: -11}
-        - {x: -13, y: -24}
-        - {x: 16, y: -24}
-        - {x: 16, y: 5}
-        - {x: 8, y: 24}
+      - - {x: -7, y: 48}
+        - {x: -10, y: 47}
+        - {x: -16, y: 33}
+        - {x: -16, y: 13}
+        - {x: -13, y: 0}
+        - {x: 16, y: 0}
+        - {x: 16, y: 29}
+        - {x: 8, y: 48}
     - name: Guybrush_47
       rect:
         serializedVersion: 2
@@ -750,8 +750,8 @@ TextureImporter:
         y: 514
         width: 31
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_48
@@ -761,18 +761,18 @@ TextureImporter:
         y: 514
         width: 33
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 7.5, y: 23.5}
-        - {x: -8.5, y: 23.5}
-        - {x: -16.5, y: 13.5}
-        - {x: -16.5, y: -13.5}
-        - {x: -15.5, y: -23.5}
-        - {x: 12.5, y: -23.5}
-        - {x: 16.5, y: 0.5}
-        - {x: 16.5, y: 13.5}
+      - - {x: 7.5, y: 47}
+        - {x: -8.5, y: 47}
+        - {x: -16.5, y: 37}
+        - {x: -16.5, y: 10}
+        - {x: -15.5, y: 0}
+        - {x: 12.5, y: 0}
+        - {x: 16.5, y: 24}
+        - {x: 16.5, y: 37}
     - name: Guybrush_49
       rect:
         serializedVersion: 2
@@ -780,18 +780,18 @@ TextureImporter:
         y: 514
         width: 36
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 7, y: 23.5}
-        - {x: -10, y: 23.5}
-        - {x: -18, y: 13.5}
-        - {x: -18, y: -13.5}
-        - {x: -17, y: -23.5}
-        - {x: 11, y: -23.5}
-        - {x: 18, y: -9.5}
-        - {x: 18, y: 11.5}
+      - - {x: 7, y: 47}
+        - {x: -10, y: 47}
+        - {x: -18, y: 37}
+        - {x: -18, y: 10}
+        - {x: -17, y: 0}
+        - {x: 11, y: 0}
+        - {x: 18, y: 14}
+        - {x: 18, y: 35}
     - name: Guybrush_50
       rect:
         serializedVersion: 2
@@ -799,20 +799,20 @@ TextureImporter:
         y: 514
         width: 32
         height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 15, y: 10}
-        - {x: 7, y: 21}
-        - {x: 4, y: 24}
-        - {x: -10, y: 24}
-        - {x: -16, y: 13}
-        - {x: -16, y: -14}
-        - {x: -12, y: -24}
-        - {x: 15, y: -24}
-        - {x: 16, y: -15}
+      - - {x: 15, y: 34}
+        - {x: 7, y: 45}
+        - {x: 4, y: 48}
+        - {x: -10, y: 48}
+        - {x: -16, y: 37}
+        - {x: -16, y: 10}
+        - {x: -12, y: 0}
+        - {x: 15, y: 0}
         - {x: 16, y: 9}
+        - {x: 16, y: 33}
     - name: Guybrush_51
       rect:
         serializedVersion: 2
@@ -820,8 +820,8 @@ TextureImporter:
         y: 514
         width: 24
         height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_52
@@ -831,8 +831,8 @@ TextureImporter:
         y: 514
         width: 26
         height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_53
@@ -842,8 +842,8 @@ TextureImporter:
         y: 458
         width: 24
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_54
@@ -853,8 +853,8 @@ TextureImporter:
         y: 458
         width: 27
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_55
@@ -864,8 +864,8 @@ TextureImporter:
         y: 458
         width: 31
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_56
@@ -875,8 +875,8 @@ TextureImporter:
         y: 458
         width: 24
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_57
@@ -886,8 +886,8 @@ TextureImporter:
         y: 458
         width: 23
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_58
@@ -897,8 +897,8 @@ TextureImporter:
         y: 458
         width: 23
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_59
@@ -908,8 +908,8 @@ TextureImporter:
         y: 458
         width: 23
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_60
@@ -919,8 +919,8 @@ TextureImporter:
         y: 458
         width: 26
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_61
@@ -930,8 +930,8 @@ TextureImporter:
         y: 401
         width: 23
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_62
@@ -941,8 +941,8 @@ TextureImporter:
         y: 401
         width: 27
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_63
@@ -952,8 +952,8 @@ TextureImporter:
         y: 401
         width: 26
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_64
@@ -963,8 +963,8 @@ TextureImporter:
         y: 401
         width: 30
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_65
@@ -974,8 +974,8 @@ TextureImporter:
         y: 401
         width: 29
         height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_66
@@ -985,8 +985,8 @@ TextureImporter:
         y: 401
         width: 31
         height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_67
@@ -996,8 +996,8 @@ TextureImporter:
         y: 401
         width: 30
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_68
@@ -1007,18 +1007,18 @@ TextureImporter:
         y: 401
         width: 41
         height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -3.5, y: 21}
-        - {x: -20.5, y: -1}
-        - {x: -20.5, y: -12}
-        - {x: -19.5, y: -16}
-        - {x: -5.5, y: -21}
-        - {x: 20.5, y: -21}
-        - {x: 20.5, y: 14}
-        - {x: 16.5, y: 21}
+      - - {x: -3.5, y: 42}
+        - {x: -20.5, y: 20}
+        - {x: -20.5, y: 9}
+        - {x: -19.5, y: 5}
+        - {x: -5.5, y: 0}
+        - {x: 20.5, y: 0}
+        - {x: 20.5, y: 35}
+        - {x: 16.5, y: 42}
     - name: Guybrush_69
       rect:
         serializedVersion: 2
@@ -1026,8 +1026,8 @@ TextureImporter:
         y: 343
         width: 23
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_70
@@ -1037,8 +1037,8 @@ TextureImporter:
         y: 343
         width: 23
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_71
@@ -1048,8 +1048,8 @@ TextureImporter:
         y: 343
         width: 24
         height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_72
@@ -1059,8 +1059,8 @@ TextureImporter:
         y: 343
         width: 25
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_73
@@ -1070,17 +1070,17 @@ TextureImporter:
         y: 343
         width: 34
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -9, y: 20}
-        - {x: -17, y: 14}
-        - {x: -17, y: -10}
-        - {x: -13, y: -20}
-        - {x: 15, y: -20}
-        - {x: 17, y: -16}
-        - {x: 17, y: 20}
+      - - {x: -9, y: 40}
+        - {x: -17, y: 34}
+        - {x: -17, y: 10}
+        - {x: -13, y: 0}
+        - {x: 15, y: 0}
+        - {x: 17, y: 4}
+        - {x: 17, y: 40}
     - name: Guybrush_74
       rect:
         serializedVersion: 2
@@ -1088,8 +1088,8 @@ TextureImporter:
         y: 382
         width: 15
         height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_75
@@ -1099,8 +1099,8 @@ TextureImporter:
         y: 343
         width: 24
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_76
@@ -1110,8 +1110,8 @@ TextureImporter:
         y: 343
         width: 25
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_77
@@ -1121,8 +1121,8 @@ TextureImporter:
         y: 343
         width: 25
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_78
@@ -1132,8 +1132,8 @@ TextureImporter:
         y: 287
         width: 25
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_79
@@ -1143,8 +1143,8 @@ TextureImporter:
         y: 287
         width: 27
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_80
@@ -1154,8 +1154,8 @@ TextureImporter:
         y: 287
         width: 28
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_81
@@ -1165,16 +1165,16 @@ TextureImporter:
         y: 287
         width: 41
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -20.5, y: 23.5}
-        - {x: -20.5, y: -12.5}
-        - {x: -17.5, y: -23.5}
-        - {x: 20.5, y: -23.5}
-        - {x: 20.5, y: 16.5}
-        - {x: 7.5, y: 23.5}
+      - - {x: -20.5, y: 47}
+        - {x: -20.5, y: 11}
+        - {x: -17.5, y: 0}
+        - {x: 20.5, y: 0}
+        - {x: 20.5, y: 40}
+        - {x: 7.5, y: 47}
     - name: Guybrush_82
       rect:
         serializedVersion: 2
@@ -1182,18 +1182,18 @@ TextureImporter:
         y: 287
         width: 39
         height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 16.5, y: 24.5}
-        - {x: -19.5, y: 24.5}
-        - {x: -19.5, y: -21.5}
-        - {x: -13.5, y: -24.5}
-        - {x: 10.5, y: -24.5}
-        - {x: 16.5, y: -19.5}
-        - {x: 19.5, y: -8.5}
-        - {x: 19.5, y: 23.5}
+      - - {x: 16.5, y: 49}
+        - {x: -19.5, y: 49}
+        - {x: -19.5, y: 3}
+        - {x: -13.5, y: 0}
+        - {x: 10.5, y: 0}
+        - {x: 16.5, y: 5}
+        - {x: 19.5, y: 16}
+        - {x: 19.5, y: 48}
     - name: Guybrush_83
       rect:
         serializedVersion: 2
@@ -1201,17 +1201,17 @@ TextureImporter:
         y: 287
         width: 36
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 11, y: 23.5}
-        - {x: -18, y: 23.5}
-        - {x: -18, y: -23.5}
-        - {x: 13, y: -23.5}
-        - {x: 17, y: -19.5}
-        - {x: 18, y: -16.5}
-        - {x: 18, y: 15.5}
+      - - {x: 11, y: 47}
+        - {x: -18, y: 47}
+        - {x: -18, y: 0}
+        - {x: 13, y: 0}
+        - {x: 17, y: 4}
+        - {x: 18, y: 7}
+        - {x: 18, y: 39}
     - name: Guybrush_84
       rect:
         serializedVersion: 2
@@ -1219,15 +1219,15 @@ TextureImporter:
         y: 287
         width: 34
         height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -17, y: 22.5}
-        - {x: -17, y: -17.5}
-        - {x: -14, y: -22.5}
-        - {x: 17, y: -22.5}
-        - {x: 17, y: 22.5}
+      - - {x: -17, y: 45}
+        - {x: -17, y: 5}
+        - {x: -14, y: 0}
+        - {x: 17, y: 0}
+        - {x: 17, y: 45}
     - name: Guybrush_85
       rect:
         serializedVersion: 2
@@ -1235,18 +1235,18 @@ TextureImporter:
         y: 238
         width: 42
         height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -17, y: 21}
-        - {x: -21, y: 19}
-        - {x: -21, y: 8}
-        - {x: -5, y: -6}
-        - {x: 15, y: -21}
-        - {x: 21, y: -21}
-        - {x: 21, y: 8}
-        - {x: 7, y: 21}
+      - - {x: -17, y: 42}
+        - {x: -21, y: 40}
+        - {x: -21, y: 29}
+        - {x: -5, y: 15}
+        - {x: 15, y: 0}
+        - {x: 21, y: 0}
+        - {x: 21, y: 29}
+        - {x: 7, y: 42}
     - name: Guybrush_86
       rect:
         serializedVersion: 2
@@ -1254,18 +1254,18 @@ TextureImporter:
         y: 238
         width: 44
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -21, y: 16}
-        - {x: -22, y: 15}
-        - {x: -22, y: 10}
-        - {x: -14, y: 3}
-        - {x: 5, y: -16}
-        - {x: 22, y: -16}
-        - {x: 22, y: 3}
-        - {x: 5, y: 16}
+      - - {x: -21, y: 32}
+        - {x: -22, y: 31}
+        - {x: -22, y: 26}
+        - {x: -14, y: 19}
+        - {x: 5, y: 0}
+        - {x: 22, y: 0}
+        - {x: 22, y: 19}
+        - {x: 5, y: 32}
     - name: Guybrush_87
       rect:
         serializedVersion: 2
@@ -1273,17 +1273,17 @@ TextureImporter:
         y: 238
         width: 50
         height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 11, y: 19}
-        - {x: -25, y: 11}
-        - {x: -25, y: -19}
-        - {x: 3, y: -19}
-        - {x: 25, y: -1}
-        - {x: 25, y: 17}
-        - {x: 23, y: 19}
+      - - {x: 11, y: 38}
+        - {x: -25, y: 30}
+        - {x: -25, y: 0}
+        - {x: 3, y: 0}
+        - {x: 25, y: 18}
+        - {x: 25, y: 36}
+        - {x: 23, y: 38}
     - name: Guybrush_88
       rect:
         serializedVersion: 2
@@ -1291,8 +1291,8 @@ TextureImporter:
         y: 238
         width: 52
         height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_89
@@ -1302,22 +1302,22 @@ TextureImporter:
         y: 180
         width: 32
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -3, y: 25}
-        - {x: -4, y: 24}
-        - {x: -4, y: 21}
-        - {x: -4, y: 23}
-        - {x: -5, y: 25}
-        - {x: -8, y: 25}
-        - {x: -13, y: 24}
-        - {x: -16, y: 21}
-        - {x: -16, y: -24}
-        - {x: -13, y: -25}
-        - {x: 16, y: -25}
-        - {x: 16, y: 25}
+      - - {x: -3, y: 50}
+        - {x: -4, y: 49}
+        - {x: -4, y: 46}
+        - {x: -4, y: 48}
+        - {x: -5, y: 50}
+        - {x: -8, y: 50}
+        - {x: -13, y: 49}
+        - {x: -16, y: 46}
+        - {x: -16, y: 1}
+        - {x: -13, y: 0}
+        - {x: 16, y: 0}
+        - {x: 16, y: 50}
     - name: Guybrush_90
       rect:
         serializedVersion: 2
@@ -1325,19 +1325,19 @@ TextureImporter:
         y: 180
         width: 43
         height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -18.5, y: 21.5}
-        - {x: -21.5, y: 18.5}
-        - {x: -21.5, y: -0.5}
-        - {x: -20.5, y: -5.5}
-        - {x: -8.5, y: -21.5}
-        - {x: 10.5, y: -21.5}
-        - {x: 21.5, y: -13.5}
-        - {x: 21.5, y: 6.5}
-        - {x: 2.5, y: 21.5}
+      - - {x: -18.5, y: 43}
+        - {x: -21.5, y: 40}
+        - {x: -21.5, y: 21}
+        - {x: -20.5, y: 16}
+        - {x: -8.5, y: 0}
+        - {x: 10.5, y: 0}
+        - {x: 21.5, y: 8}
+        - {x: 21.5, y: 28}
+        - {x: 2.5, y: 43}
     - name: Guybrush_91
       rect:
         serializedVersion: 2
@@ -1345,17 +1345,17 @@ TextureImporter:
         y: 180
         width: 48
         height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -7, y: 18.5}
-        - {x: -20, y: 18.5}
-        - {x: -24, y: 13.5}
-        - {x: -24, y: -4.5}
-        - {x: -5, y: -18.5}
-        - {x: 24, y: -18.5}
-        - {x: 24, y: 4.5}
+      - - {x: -7, y: 37}
+        - {x: -20, y: 37}
+        - {x: -24, y: 32}
+        - {x: -24, y: 14}
+        - {x: -5, y: 0}
+        - {x: 24, y: 0}
+        - {x: 24, y: 23}
     - name: Guybrush_92
       rect:
         serializedVersion: 2
@@ -1363,23 +1363,23 @@ TextureImporter:
         y: 180
         width: 51
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 6.5, y: 16}
-        - {x: 1.5, y: 11}
-        - {x: -4.5, y: 11}
-        - {x: -15.5, y: 9}
-        - {x: -25.5, y: 2}
-        - {x: -25.5, y: -5}
-        - {x: -23.5, y: -6}
-        - {x: -25.5, y: -10}
-        - {x: -25.5, y: -16}
-        - {x: 6.5, y: -16}
-        - {x: 18.5, y: -14}
-        - {x: 25.5, y: -12}
-        - {x: 25.5, y: 16}
+      - - {x: 6.5, y: 32}
+        - {x: 1.5, y: 27}
+        - {x: -4.5, y: 27}
+        - {x: -15.5, y: 25}
+        - {x: -25.5, y: 18}
+        - {x: -25.5, y: 11}
+        - {x: -23.5, y: 10}
+        - {x: -25.5, y: 6}
+        - {x: -25.5, y: 0}
+        - {x: 6.5, y: 0}
+        - {x: 18.5, y: 2}
+        - {x: 25.5, y: 4}
+        - {x: 25.5, y: 32}
     - name: Guybrush_93
       rect:
         serializedVersion: 2
@@ -1387,20 +1387,20 @@ TextureImporter:
         y: 180
         width: 44
         height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 21, y: 20.5}
-        - {x: -7, y: 20.5}
-        - {x: -18, y: 16.5}
-        - {x: -22, y: 4.5}
-        - {x: -22, y: -13.5}
-        - {x: -14, y: -20.5}
-        - {x: 6, y: -20.5}
-        - {x: 18, y: -9.5}
-        - {x: 22, y: 3.5}
-        - {x: 22, y: 19.5}
+      - - {x: 21, y: 41}
+        - {x: -7, y: 41}
+        - {x: -18, y: 37}
+        - {x: -22, y: 25}
+        - {x: -22, y: 7}
+        - {x: -14, y: 0}
+        - {x: 6, y: 0}
+        - {x: 18, y: 11}
+        - {x: 22, y: 24}
+        - {x: 22, y: 40}
     - name: Guybrush_94
       rect:
         serializedVersion: 2
@@ -1408,18 +1408,18 @@ TextureImporter:
         y: 180
         width: 42
         height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -9, y: 21}
-        - {x: -21, y: 5}
-        - {x: -21, y: -20}
-        - {x: -17, y: -21}
-        - {x: 1, y: -21}
-        - {x: 12, y: -14}
-        - {x: 21, y: 1}
-        - {x: 21, y: 21}
+      - - {x: -9, y: 42}
+        - {x: -21, y: 26}
+        - {x: -21, y: 1}
+        - {x: -17, y: 0}
+        - {x: 1, y: 0}
+        - {x: 12, y: 7}
+        - {x: 21, y: 22}
+        - {x: 21, y: 42}
     - name: Guybrush_95
       rect:
         serializedVersion: 2
@@ -1427,17 +1427,17 @@ TextureImporter:
         y: 126
         width: 40
         height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -18, y: 21.5}
-        - {x: -20, y: 12.5}
-        - {x: -20, y: -21.5}
-        - {x: 7, y: -21.5}
-        - {x: 17, y: -9.5}
-        - {x: 20, y: 4.5}
-        - {x: 20, y: 21.5}
+      - - {x: -18, y: 43}
+        - {x: -20, y: 34}
+        - {x: -20, y: 0}
+        - {x: 7, y: 0}
+        - {x: 17, y: 12}
+        - {x: 20, y: 26}
+        - {x: 20, y: 43}
     - name: Guybrush_96
       rect:
         serializedVersion: 2
@@ -1445,16 +1445,16 @@ TextureImporter:
         y: 126
         width: 39
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -9.5, y: 22}
-        - {x: -19.5, y: 17}
-        - {x: -19.5, y: -18}
-        - {x: -18.5, y: -22}
-        - {x: 19.5, y: -22}
-        - {x: 19.5, y: 22}
+      - - {x: -9.5, y: 44}
+        - {x: -19.5, y: 39}
+        - {x: -19.5, y: 4}
+        - {x: -18.5, y: 0}
+        - {x: 19.5, y: 0}
+        - {x: 19.5, y: 44}
     - name: Guybrush_97
       rect:
         serializedVersion: 2
@@ -1462,19 +1462,19 @@ TextureImporter:
         y: 126
         width: 40
         height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -17, y: 22.5}
-        - {x: -20, y: 20.5}
-        - {x: -20, y: -18.5}
-        - {x: -19, y: -21.5}
-        - {x: -11, y: -22.5}
-        - {x: 11, y: -22.5}
-        - {x: 20, y: -6.5}
-        - {x: 20, y: 17.5}
-        - {x: 17, y: 22.5}
+      - - {x: -17, y: 45}
+        - {x: -20, y: 43}
+        - {x: -20, y: 4}
+        - {x: -19, y: 1}
+        - {x: -11, y: 0}
+        - {x: 11, y: 0}
+        - {x: 20, y: 16}
+        - {x: 20, y: 40}
+        - {x: 17, y: 45}
     - name: Guybrush_98
       rect:
         serializedVersion: 2
@@ -1482,8 +1482,8 @@ TextureImporter:
         y: 126
         width: 38
         height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_99
@@ -1493,18 +1493,18 @@ TextureImporter:
         y: 126
         width: 40
         height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: 19}
-        - {x: -20, y: 4}
-        - {x: -20, y: -12}
-        - {x: -16, y: -19}
-        - {x: 6, y: -19}
-        - {x: 20, y: 0}
-        - {x: 20, y: 17}
-        - {x: 18, y: 19}
+      - - {x: -8, y: 38}
+        - {x: -20, y: 23}
+        - {x: -20, y: 7}
+        - {x: -16, y: 0}
+        - {x: 6, y: 0}
+        - {x: 20, y: 19}
+        - {x: 20, y: 36}
+        - {x: 18, y: 38}
     - name: Guybrush_100
       rect:
         serializedVersion: 2
@@ -1512,19 +1512,19 @@ TextureImporter:
         y: 126
         width: 39
         height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 0.5, y: 22.5}
-        - {x: -11.5, y: 12.5}
-        - {x: -19.5, y: 3.5}
-        - {x: -19.5, y: -12.5}
-        - {x: 2.5, y: -22.5}
-        - {x: 16.5, y: -22.5}
-        - {x: 19.5, y: -20.5}
-        - {x: 19.5, y: 6.5}
-        - {x: 14.5, y: 22.5}
+      - - {x: 0.5, y: 45}
+        - {x: -11.5, y: 35}
+        - {x: -19.5, y: 26}
+        - {x: -19.5, y: 10}
+        - {x: 2.5, y: 0}
+        - {x: 16.5, y: 0}
+        - {x: 19.5, y: 2}
+        - {x: 19.5, y: 29}
+        - {x: 14.5, y: 45}
     - name: Guybrush_101
       rect:
         serializedVersion: 2
@@ -1532,16 +1532,16 @@ TextureImporter:
         y: 75
         width: 45
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -22.5, y: 20}
-        - {x: -22.5, y: -2}
-        - {x: -4.5, y: -20}
-        - {x: 22.5, y: -20}
-        - {x: 22.5, y: 10}
-        - {x: 8.5, y: 20}
+      - - {x: -22.5, y: 40}
+        - {x: -22.5, y: 18}
+        - {x: -4.5, y: 0}
+        - {x: 22.5, y: 0}
+        - {x: 22.5, y: 30}
+        - {x: 8.5, y: 40}
     - name: Guybrush_102
       rect:
         serializedVersion: 2
@@ -1549,8 +1549,8 @@ TextureImporter:
         y: 82
         width: 60
         height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Guybrush_103
@@ -1560,28 +1560,28 @@ TextureImporter:
         y: 79
         width: 69
         height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 14.5, y: -6.5}
-        - {x: 16.5, y: -5.5}
-        - {x: 20.5, y: -8.5}
-        - {x: 26.5, y: -11.5}
-        - {x: 30.5, y: -11.5}
-        - {x: 34.5, y: -6.5}
-        - {x: 34.5, y: 2.5}
-        - {x: -1.5, y: 16.5}
-        - {x: -27.5, y: 16.5}
-        - {x: -31.5, y: 9.5}
-        - {x: -34.5, y: 2.5}
-        - {x: -34.5, y: -9.5}
-        - {x: -33.5, y: -9.5}
-        - {x: 4.5, y: -16.5}
-        - {x: 15.5, y: -16.5}
-        - {x: 20.5, y: -11.5}
-        - {x: 20.5, y: -9.5}
-        - {x: 17.5, y: -6.5}
+      - - {x: 14.5, y: 10}
+        - {x: 16.5, y: 11}
+        - {x: 20.5, y: 8}
+        - {x: 26.5, y: 5}
+        - {x: 30.5, y: 5}
+        - {x: 34.5, y: 10}
+        - {x: 34.5, y: 19}
+        - {x: -1.5, y: 33}
+        - {x: -27.5, y: 33}
+        - {x: -31.5, y: 26}
+        - {x: -34.5, y: 19}
+        - {x: -34.5, y: 7}
+        - {x: -33.5, y: 7}
+        - {x: 4.5, y: 0}
+        - {x: 15.5, y: 0}
+        - {x: 20.5, y: 5}
+        - {x: 20.5, y: 7}
+        - {x: 17.5, y: 10}
     - name: Guybrush_104
       rect:
         serializedVersion: 2
@@ -1589,19 +1589,19 @@ TextureImporter:
         y: 79
         width: 54
         height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -15, y: 19.5}
-        - {x: -27, y: -4.5}
-        - {x: -27, y: -12.5}
-        - {x: -18, y: -18.5}
-        - {x: -6, y: -19.5}
-        - {x: 21, y: -19.5}
-        - {x: 27, y: -17.5}
-        - {x: 27, y: -5.5}
-        - {x: 3, y: 19.5}
+      - - {x: -15, y: 39}
+        - {x: -27, y: 15}
+        - {x: -27, y: 7}
+        - {x: -18, y: 1}
+        - {x: -6, y: 0}
+        - {x: 21, y: 0}
+        - {x: 27, y: 2}
+        - {x: 27, y: 14}
+        - {x: 3, y: 39}
     - name: Guybrush_105
       rect:
         serializedVersion: 2
@@ -1609,14 +1609,14 @@ TextureImporter:
         y: 24
         width: 33
         height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16.5, y: 16.5}
-        - {x: -16.5, y: -16.5}
-        - {x: 16.5, y: -16.5}
-        - {x: 16.5, y: 16.5}
+      - - {x: -16.5, y: 33}
+        - {x: -16.5, y: 0}
+        - {x: 16.5, y: 0}
+        - {x: 16.5, y: 33}
     - name: Guybrush_106
       rect:
         serializedVersion: 2
@@ -1624,18 +1624,18 @@ TextureImporter:
         y: 23
         width: 38
         height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -11, y: 23}
-        - {x: -12, y: 22}
-        - {x: -19, y: 9}
-        - {x: -19, y: -23}
-        - {x: 11, y: -23}
-        - {x: 19, y: -13}
-        - {x: 19, y: 16}
-        - {x: 13, y: 23}
+      - - {x: -11, y: 46}
+        - {x: -12, y: 45}
+        - {x: -19, y: 32}
+        - {x: -19, y: 0}
+        - {x: 11, y: 0}
+        - {x: 19, y: 10}
+        - {x: 19, y: 39}
+        - {x: 13, y: 46}
     - name: Guybrush_107
       rect:
         serializedVersion: 2
@@ -1643,14 +1643,14 @@ TextureImporter:
         y: 4
         width: 128
         height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -64, y: 29.5}
-        - {x: -64, y: -29.5}
-        - {x: 64, y: -29.5}
-        - {x: 64, y: 29.5}
+      - - {x: -64, y: 59}
+        - {x: -64, y: 0}
+        - {x: 64, y: 0}
+        - {x: 64, y: 59}
     outline: []
   spritePackingTag: 
   userData: 
