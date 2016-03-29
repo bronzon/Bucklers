@@ -1,14 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+[RequireComponent(typeof(SpeedScale))]
 public class PlayerController : MonoBehaviour {
-	public float speed = 1;
+	public float baseSpeed = 1;
+	private SpeedScale speedScale;
 	private Animator animator;
 
 
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator>();
+		speedScale = GetComponent<SpeedScale>();
 	}
 
 	// Update is called once per frame
@@ -29,7 +31,8 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		if (direction.magnitude > float.Epsilon) {
-			Vector2 estimatedPos = new Vector2(transform.position.x + direction.x*speed, transform.position.y + direction.y*speed);
+			float actualSpeed = speedScale.Scale * baseSpeed;
+			Vector2 estimatedPos = new Vector2(transform.position.x + direction.x*actualSpeed, transform.position.y + direction.y*actualSpeed);
 			RaycastHit2D hit = Physics2D.Linecast (transform.position, estimatedPos);
 			if (hit.collider == null) {
 				transform.position = estimatedPos;

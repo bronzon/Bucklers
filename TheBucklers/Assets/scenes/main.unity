@@ -240,6 +240,7 @@ GameObject:
   - 95: {fileID: 2014772661}
   - 114: {fileID: 2014772663}
   - 212: {fileID: 2014772664}
+  - 114: {fileID: 2014772665}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -287,7 +288,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19d5b27033c18c468c78589fa30bbb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.05
+  baseSpeed: 0.2
+  actualSpeed: 0
 --- !u!212 &2014772664
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -318,6 +320,17 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &2014772665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2014772660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 824939c42f650874eac0600f527174f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2023294181
 Prefab:
   m_ObjectHideFlags: 0
@@ -360,7 +373,7 @@ Prefab:
     - target: {fileID: 11448194, guid: 448f3785ad0f55a4ebb12808a133d0bd, type: 2}
       propertyPath: character
       value: 
-      objectReference: {fileID: 2014772660}
+      objectReference: {fileID: 196160186}
     - target: {fileID: 11448194, guid: 448f3785ad0f55a4ebb12808a133d0bd, type: 2}
       propertyPath: minAtUnits
       value: 2.14
@@ -373,6 +386,10 @@ Prefab:
       propertyPath: maxScale
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 11448194, guid: 448f3785ad0f55a4ebb12808a133d0bd, type: 2}
+      propertyPath: scalable
+      value: 
+      objectReference: {fileID: 2014772665}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 448f3785ad0f55a4ebb12808a133d0bd, type: 2}
   m_IsPrefabParent: 0
