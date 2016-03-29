@@ -3,6 +3,7 @@ using System.Collections;
 
 public abstract class Item : MonoBehaviour {
 	private VerbSystem verbSystem;
+	protected TextSystem textSystem;
 
 	public void Click () {
 		switch (verbSystem.CurrentVerb) {
@@ -21,6 +22,7 @@ public abstract class Item : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		this.verbSystem = GameObject.FindGameObjectWithTag ("VerbSystem").GetComponent<VerbSystem> ();
+		this.textSystem = GameObject.FindGameObjectWithTag ("TextSystem").GetComponent<TextSystem> ();
 	}
 
 	public abstract void Use (Item with);
