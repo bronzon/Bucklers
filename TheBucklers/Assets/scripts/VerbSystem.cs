@@ -5,7 +5,8 @@ public enum Verb {
 	WALK,
 	USE,
 	TALK,
-	LOOK_AT
+	LOOK_AT,
+	PICK_UP
 }
 
 public class VerbSystem : MonoBehaviour {

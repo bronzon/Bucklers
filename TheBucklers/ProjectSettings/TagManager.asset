@@ -6,6 +6,7 @@ TagManager:
   tags:
   - VerbSystem
   - TextSystem
+  - Inventory
   layers:
   - Default
   - TransparentFX
@@ -45,6 +46,9 @@ TagManager:
     locked: 0
   - name: backgrounds
     uniqueID: 2206177259
+    locked: 0
+  - name: items
+    uniqueID: 3571863081
     locked: 0
   - name: characters
     uniqueID: 912489065
