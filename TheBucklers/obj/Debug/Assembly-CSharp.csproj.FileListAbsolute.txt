@@ -39,3 +39,4 @@ E:\dev\Bucklers\TheBucklers\Temp\bin\Debug\UnityEngine.UI.xml
 E:\dev\Bucklers\TheBucklers\Temp\bin\Debug\UnityEngine.Networking.xml
 E:\dev\Bucklers\TheBucklers\obj\Debug\Assembly-CSharp.dll
 E:\dev\Bucklers\TheBucklers\obj\Debug\Assembly-CSharp.pdb
+E:\dev\Bucklers\TheBucklers\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
