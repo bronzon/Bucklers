@@ -19,7 +19,7 @@ public abstract class Item : MonoBehaviour {
 			PickUp ();
 			break;
 		case(Verb.TALK_TO):
-			Talk ();
+			TalkTo ();
 			break;
 		default:
 			Debug.Log ("current verb not implemented: " + verbSystem.CurrentVerb.ToString());
@@ -39,7 +39,7 @@ public abstract class Item : MonoBehaviour {
 		return "";
 	}
 
-	public virtual void Talk() {
+	public virtual void TalkTo() {
 		
 	}
 

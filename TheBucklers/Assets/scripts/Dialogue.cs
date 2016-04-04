@@ -28,6 +28,8 @@ public class CharacterLine {
 }
 
 public abstract class Dialogue : Item {
+	private DialogueGui gui;
+
 	public List<CharacterLine> lines = new List<CharacterLine>();
 	protected CharacterLine AddLine(string text) {
 		CharacterLine line = CharacterLine.Create (text);
@@ -37,12 +39,24 @@ public abstract class Dialogue : Item {
 
 	protected override void Start () {
 		base.Start ();
+		gui = GameObject.FindGameObjectWithTag ("DialogueGui").GetComponent<DialogueGui> ();
 		CreateDialogue ();
 	}
-	public override void Talk () {
-		foreach (CharacterLine line in lines) {
-			Debug.Log (line.text);
-		}
+
+	public override void TalkTo () {
+		ShowDialogue (lines);
+	}
+
+	private void ShowDialogue(List<CharacterLine> lines) {
+		gui.ShowDialogue (lines, (CharacterLine selectedLine) => {
+			if(selectedLine.npcResponse != null && selectedLine.npcResponse.npcText != "") {
+				textSystem.WriteText(selectedLine.npcResponse.npcText, transform.position, null, 3, () => {
+					if(selectedLine.npcResponse.characterResponses.Count > 0) {
+						ShowDialogue(selectedLine.npcResponse.characterResponses);
+					}
+				});
+			}
+		});
 	}
 
 	public abstract void CreateDialogue();

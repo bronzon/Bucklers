@@ -8,6 +8,7 @@ TagManager:
   - TextSystem
   - Inventory
   - Room
+  - DialogueGui
   layers:
   - Default
   - TransparentFX
