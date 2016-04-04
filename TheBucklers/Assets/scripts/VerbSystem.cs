@@ -4,7 +4,7 @@ using System.Collections;
 public enum Verb {
 	WALK,
 	USE,
-	TALK,
+	TALK_TO,
 	LOOK_AT,
 	PICK_UP
 }

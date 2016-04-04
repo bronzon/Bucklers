@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(BoxCollider2D))]
 public abstract class Item : MonoBehaviour {
 	private VerbSystem verbSystem;
 	protected TextSystem textSystem;
@@ -17,6 +18,9 @@ public abstract class Item : MonoBehaviour {
 		case(Verb.PICK_UP):
 			PickUp ();
 			break;
+		case(Verb.TALK_TO):
+			Talk ();
+			break;
 		default:
 			Debug.Log ("current verb not implemented: " + verbSystem.CurrentVerb.ToString());
 			break;
@@ -24,14 +28,19 @@ public abstract class Item : MonoBehaviour {
 	}
 
 	// Use this for initialization
-	void Start () {
+	protected virtual void Start () {
 		this.verbSystem = GameObject.FindGameObjectWithTag ("VerbSystem").GetComponent<VerbSystem> ();
 		this.textSystem = GameObject.FindGameObjectWithTag ("TextSystem").GetComponent<TextSystem> ();
 		this.inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
+		GetComponent<BoxCollider2D> ().isTrigger = true;
 	}
 
 	public virtual string GetName(){
 		return "";
+	}
+
+	public virtual void Talk() {
+		
 	}
 
 	public virtual void Use (Item with) {
