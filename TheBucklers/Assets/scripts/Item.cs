@@ -6,7 +6,7 @@ public abstract class Item : MonoBehaviour {
 	private VerbSystem verbSystem;
 	protected TextSystem textSystem;
 	protected Inventory inventory;
-
+	public delegate void VerbExecutedCallback ();
 	public void Click () {
 		switch (verbSystem.CurrentVerb) {
 		case(Verb.USE):
@@ -19,7 +19,9 @@ public abstract class Item : MonoBehaviour {
 			PickUp ();
 			break;
 		case(Verb.TALK_TO):
-			TalkTo ();
+			TalkTo (() => {
+				verbSystem.CurrentVerb = Verb.WALK;
+			});
 			break;
 		default:
 			Debug.Log ("current verb not implemented: " + verbSystem.CurrentVerb.ToString());
@@ -39,8 +41,8 @@ public abstract class Item : MonoBehaviour {
 		return "";
 	}
 
-	public virtual void TalkTo() {
-		
+	public virtual void TalkTo(VerbExecutedCallback callback) {
+		callback ();
 	}
 
 	public virtual void Use (Item with) {
@@ -52,6 +54,5 @@ public abstract class Item : MonoBehaviour {
 	}
 
 	public virtual void LookAt() {
-			
 	}
 }

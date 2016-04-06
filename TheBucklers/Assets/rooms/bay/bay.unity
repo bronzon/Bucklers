@@ -325,6 +325,22 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &227238835 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 175986, guid: 3ab5b9bfbf0f8ef41b26380a038b4746, type: 2}
+  m_PrefabInternal: {fileID: 1092191302}
+--- !u!114 &227238836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 227238835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4900b6594238eff4da66a33a842f5b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GuiIsBelowScreenSpaceCoord: 63
 --- !u!1 &720427787
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,6 +567,10 @@ Prefab:
       propertyPath: minAtUnits
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 11418668, guid: d950d5a70fdf78542879826cd37d3614, type: 2}
+      propertyPath: yLimitInScreenSpace
+      value: 63
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d950d5a70fdf78542879826cd37d3614, type: 2}
   m_IsPrefabParent: 0
@@ -677,6 +697,10 @@ Prefab:
       propertyPath: m_TagString
       value: DialogueGui
       objectReference: {fileID: 0}
+    - target: {fileID: 175986, guid: 3ab5b9bfbf0f8ef41b26380a038b4746, type: 2}
+      propertyPath: m_TagString
+      value: Gui
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ab5b9bfbf0f8ef41b26380a038b4746, type: 2}
   m_IsPrefabParent: 0
@@ -706,6 +730,7 @@ GameObject:
   - 212: {fileID: 1211517797}
   - 114: {fileID: 1211517799}
   - 61: {fileID: 1211517798}
+  - 114: {fileID: 1211517800}
   m_Layer: 9
   m_Name: lechuck
   m_TagString: Untagged
@@ -780,6 +805,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be3cb41f2f0fe7543b287f84bd11fe81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1211517800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1211517795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 696de220503a2134d8d126c2b76055f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializedLines:
+  - characterSentence: 
+    response: 
+    childCount: 0
+    indexOfFirstChild: 1
 --- !u!1 &1446705830
 GameObject:
   m_ObjectHideFlags: 0

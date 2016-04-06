@@ -43,21 +43,24 @@ public abstract class Dialogue : Item {
 		CreateDialogue ();
 	}
 
-	public override void TalkTo () {
-		ShowDialogue (lines);
+	public override void TalkTo (VerbExecutedCallback callback) {
+		ShowDialogue (lines, callback);
 	}
 
-	private void ShowDialogue(List<CharacterLine> lines) {
+	private void ShowDialogue(List<CharacterLine> lines, VerbExecutedCallback callback) {
 		gui.ShowDialogue (lines, (CharacterLine selectedLine) => {
 			if(selectedLine.npcResponse != null && selectedLine.npcResponse.npcText != "") {
 				textSystem.WriteText(selectedLine.npcResponse.npcText, transform.position, null, 3, () => {
 					if(selectedLine.npcResponse.characterResponses.Count > 0) {
-						ShowDialogue(selectedLine.npcResponse.characterResponses);
+						ShowDialogue(selectedLine.npcResponse.characterResponses, callback);
+					} else {
+						callback();
 					}
 				});
+			} else {
+				callback();
 			}
 		});
 	}
-
 	public abstract void CreateDialogue();
 }

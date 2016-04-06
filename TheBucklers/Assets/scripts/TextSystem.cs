@@ -20,7 +20,7 @@ public class TextSystem : MonoBehaviour {
 			color = defaultColor;
 		}
 
-		if (callback == null) {
+		if (callback != null) {
 			callback ();
 		}
 

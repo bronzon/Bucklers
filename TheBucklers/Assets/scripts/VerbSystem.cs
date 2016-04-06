@@ -11,11 +11,16 @@ public enum Verb {
 
 public class VerbSystem : MonoBehaviour {
 	private Verb currentVerb = Verb.WALK;
+
 	public Verb CurrentVerb {
 		get {
 			return this.currentVerb;
+		} 
+		set {
+			this.currentVerb = value;
 		}
 	}
+
 	public void SetCurrentVerb (string verb) {
 		currentVerb = (Verb)System.Enum.Parse (typeof(Verb), verb);
 	}

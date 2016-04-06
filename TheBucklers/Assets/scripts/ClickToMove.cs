@@ -4,7 +4,14 @@ using System.Collections.Generic;
 //example
 [RequireComponent(typeof(PolyNavAgent))]
 public class ClickToMove : MonoBehaviour{
-	
+	private VerbSystem verbSystem;
+	private GuiConf guiConf;
+
+	void Start()  {
+		verbSystem = GameObject.FindGameObjectWithTag ("VerbSystem").GetComponent<VerbSystem> ();
+		guiConf = GameObject.FindGameObjectWithTag ("Gui").GetComponent<GuiConf> ();
+	}
+
 	private PolyNavAgent _agent;
 	public PolyNavAgent agent{
 		get
@@ -17,8 +24,12 @@ public class ClickToMove : MonoBehaviour{
 	}
 
 	void Update() {
-		if (Input.GetMouseButton(0)){
-			agent.SetDestination( Camera.main.ScreenToWorldPoint(Input.mousePosition) );
+		if (verbSystem.CurrentVerb == Verb.WALK && Input.GetMouseButton(0)) {
+			var mousePosition = Input.mousePosition;
+			if (mousePosition.y > guiConf.GuiIsBelowScreenSpaceCoord) {
+				agent.SetDestination(Camera.main.ScreenToWorldPoint (mousePosition) );
+			}
+
 		}
 	}
 }
