@@ -8,7 +8,6 @@ public class ClickToMove : MonoBehaviour{
 	private GuiConf guiConf;
 
 	void Start()  {
-		verbSystem = GameObject.FindGameObjectWithTag ("VerbSystem").GetComponent<VerbSystem> ();
 		guiConf = GameObject.FindGameObjectWithTag ("Gui").GetComponent<GuiConf> ();
 	}
 
@@ -23,8 +22,12 @@ public class ClickToMove : MonoBehaviour{
 		}
 	}
 
+	public void StopPlayer () {
+		_agent.Stop ();
+	}
+
 	void Update() {
-		if (verbSystem.CurrentVerb == Verb.WALK && Input.GetMouseButton(0)) {
+		if (Input.GetMouseButton(0)) {
 			var mousePosition = Input.mousePosition;
 			if (mousePosition.y > guiConf.GuiIsBelowScreenSpaceCoord) {
 				agent.SetDestination(Camera.main.ScreenToWorldPoint (mousePosition) );

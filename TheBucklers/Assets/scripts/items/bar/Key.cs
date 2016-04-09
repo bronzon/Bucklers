@@ -12,6 +12,6 @@ public class Key : Item {
 	}
 
 	public override void LookAt () {
-		textSystem.WriteText ("Looks like the key to the door", new Vector2());
+		Text ("Looks like the key to the door");
 	}
 }

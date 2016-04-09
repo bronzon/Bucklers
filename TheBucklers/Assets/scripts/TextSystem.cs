@@ -20,8 +20,8 @@ public class TextSystem : MonoBehaviour {
 			color = defaultColor;
 		}
 
-		if (callback != null) {
-			callback ();
+		if (textCallback != null) {
+			textCallback ();
 		}
 
 		textCallback = callback;
@@ -36,11 +36,7 @@ public class TextSystem : MonoBehaviour {
 		transform.position = where;
 		Text text = GetComponentInChildren<Text> ();
 		text.text = sentenceQueue.Dequeue ();
-		if (sentences.Count >= 0) {
-			if (textCallback != null) {
-				textCallback ();
-			}
-		}
+	
 		timer = showSentenceForSeconds;
 		this.showSentenceForSeconds = showSentenceForSeconds;
 	}
@@ -55,10 +51,13 @@ public class TextSystem : MonoBehaviour {
 					textComponent.text = sentenceQueue.Dequeue();
 					timer = showSentenceForSeconds;
 				} else {
-					if (textCallback != null) {
-						textCallback ();
-					}
 					GetComponent<Canvas> ().enabled = false;
+					if (textCallback != null) {
+						TextCallback oldCallback = textCallback;
+						textCallback = null;
+						oldCallback ();
+
+					}
 				}
 			}
 		}

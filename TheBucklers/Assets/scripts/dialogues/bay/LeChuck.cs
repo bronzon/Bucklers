@@ -14,7 +14,7 @@ public class LeChuck : Dialogue {
 	}
 
 	public override void LookAt () {
-		textSystem.WriteText ("help me moma i'm scared", new Vector2());
+		Text ("help me moma i'm scared");
 	}
 
 }

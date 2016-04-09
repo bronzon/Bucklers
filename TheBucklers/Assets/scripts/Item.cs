@@ -4,8 +4,11 @@ using System.Collections;
 [RequireComponent(typeof(BoxCollider2D))]
 public abstract class Item : MonoBehaviour {
 	private VerbSystem verbSystem;
-	protected TextSystem textSystem;
+	private TextSystem textSystem;
+	private GameObject player;
+
 	protected Inventory inventory;
+
 	public delegate void VerbExecutedCallback ();
 	public void Click () {
 		switch (verbSystem.CurrentVerb) {
@@ -19,9 +22,7 @@ public abstract class Item : MonoBehaviour {
 			PickUp ();
 			break;
 		case(Verb.TALK_TO):
-			TalkTo (() => {
-				verbSystem.CurrentVerb = Verb.WALK;
-			});
+			TalkTo ();
 			break;
 		default:
 			Debug.Log ("current verb not implemented: " + verbSystem.CurrentVerb.ToString());
@@ -34,6 +35,7 @@ public abstract class Item : MonoBehaviour {
 		this.verbSystem = GameObject.FindGameObjectWithTag ("VerbSystem").GetComponent<VerbSystem> ();
 		this.textSystem = GameObject.FindGameObjectWithTag ("TextSystem").GetComponent<TextSystem> ();
 		this.inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
+		this.player = GameObject.FindGameObjectWithTag ("Player");
 		GetComponent<BoxCollider2D> ().isTrigger = true;
 	}
 
@@ -41,18 +43,37 @@ public abstract class Item : MonoBehaviour {
 		return "";
 	}
 
-	public virtual void TalkTo(VerbExecutedCallback callback) {
-		callback ();
+	public virtual void TalkTo() {
+
 	}
 
 	public virtual void Use (Item with) {
-		textSystem.WriteText ("I can't use that", new Vector2());
+		textSystem.WriteText ("I can't use that", player.transform.position);
 	}
 
 	public virtual void PickUp () {
-		textSystem.WriteText ("I can't pick that up", new Vector2());
+		textSystem.WriteText ("I can't pick that up", player.transform.position);
 	}
 
 	public virtual void LookAt() {
+	}
+
+	public void Text(string text, Vector2? pos = null, Color? color = null, float showForSeconds=3f, TextSystem.TextCallback callback = null) {
+		Vector2 finalPos; 
+		if (pos == null) {
+			finalPos = new Vector2(player.transform.position.x, player.transform.position.y);
+		} else {
+			finalPos = (Vector2)pos;
+		}
+		textSystem.WriteText (text, finalPos, color, showForSeconds, callback);
+	}
+
+	public void FreezePlayer() {
+		player.GetComponent<ClickToMove> ().StopPlayer ();
+		player.GetComponent<ClickToMove> ().enabled = false;	
+	}
+
+	public void UnfreezePlayer() {
+		player.GetComponent<ClickToMove> ().enabled = true;	
 	}
 }
