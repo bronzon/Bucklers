@@ -2,11 +2,12 @@
 using System.Collections;
 
 [RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(InteractionPoint))]
 public abstract class Item : MonoBehaviour {
 	private VerbSystem verbSystem;
 	private TextSystem textSystem;
 	private GameObject player;
-
+	private InteractionPoint interactionPoint;
 	protected Inventory inventory;
 
 	public delegate void VerbExecutedCallback ();
@@ -37,6 +38,8 @@ public abstract class Item : MonoBehaviour {
 		this.inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
 		this.player = GameObject.FindGameObjectWithTag ("Player");
 		GetComponent<BoxCollider2D> ().isTrigger = true;
+		interactionPoint = GetComponent<InteractionPoint> ();
+	
 	}
 
 	public virtual string GetName(){

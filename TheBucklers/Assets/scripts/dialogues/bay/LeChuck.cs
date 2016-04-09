@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEditor;
 
 public class LeChuck : Dialogue {
 	public override void CreateDialogue () {
