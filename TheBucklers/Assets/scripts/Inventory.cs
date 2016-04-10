@@ -2,19 +2,18 @@
 using System.Collections.Generic;
 
 public class Inventory : MonoBehaviour {
-	List<Item> items = new List<Item>();
+	private List<Item> items = new List<Item>();
+	private InventoryGui gui;
 
 	public void AddItem(Item item) {
 		items.Add (item);
-		//itemGui.redraw(items);
+		gui.Add (item);
+	}
+		
+	void Start () {
+		gui = GameObject.FindGameObjectWithTag ("InventoryGui").GetComponent<InventoryGui> ();
 	}
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
 	void Update () {
 	
 	}

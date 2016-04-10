@@ -325,22 +325,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1 &227238835 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 175986, guid: 3ab5b9bfbf0f8ef41b26380a038b4746, type: 2}
-  m_PrefabInternal: {fileID: 1092191302}
---- !u!114 &227238836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 227238835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4900b6594238eff4da66a33a842f5b26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GuiIsBelowScreenSpaceCoord: 63
 --- !u!1001 &638874795
 Prefab:
   m_ObjectHideFlags: 0
@@ -771,22 +755,18 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 796993968}
-    - target: {fileID: 11413168, guid: 3ab5b9bfbf0f8ef41b26380a038b4746, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 796993968}
     - target: {fileID: 11482260, guid: 3ab5b9bfbf0f8ef41b26380a038b4746, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 796993968}
-    - target: {fileID: 108646, guid: 3ab5b9bfbf0f8ef41b26380a038b4746, type: 2}
-      propertyPath: m_TagString
-      value: DialogueGui
-      objectReference: {fileID: 0}
-    - target: {fileID: 175986, guid: 3ab5b9bfbf0f8ef41b26380a038b4746, type: 2}
-      propertyPath: m_TagString
-      value: Gui
-      objectReference: {fileID: 0}
+    - target: {fileID: 11413168, guid: 3ab5b9bfbf0f8ef41b26380a038b4746, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 796993968}
+    - target: {fileID: 11415274, guid: 3ab5b9bfbf0f8ef41b26380a038b4746, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 796993968}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ab5b9bfbf0f8ef41b26380a038b4746, type: 2}
   m_IsPrefabParent: 0
@@ -891,6 +871,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be3cb41f2f0fe7543b287f84bd11fe81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickable: 1
+  icon: {fileID: 21300214, guid: 3b340236fdb05a248b504665f35ad5b9, type: 3}
 --- !u!114 &1211517800
 MonoBehaviour:
   m_ObjectHideFlags: 0

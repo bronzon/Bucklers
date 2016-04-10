@@ -4,11 +4,16 @@ using System.Collections;
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(InteractionPoint))]
 public abstract class Item : MonoBehaviour {
+
+	public bool pickable;
+	[HideInInspector]
+	public Sprite icon;
+
 	private VerbSystem verbSystem;
 	private TextSystem textSystem;
 	private GameObject player;
 	private InteractionPoint interactionPoint;
-	protected Inventory inventory;
+	private Inventory inventory;
 
 	public delegate void VerbExecutedCallback ();
 	public void Click () {
@@ -55,7 +60,12 @@ public abstract class Item : MonoBehaviour {
 	}
 
 	public virtual void PickUp () {
-		textSystem.WriteText ("I can't pick that up", player.transform.position);
+		if (pickable) {
+			AddToInventory ();
+		} else {
+			textSystem.WriteText ("I can't pick that up", player.transform.position);
+		}
+
 	}
 
 	public virtual void LookAt() {
@@ -78,5 +88,9 @@ public abstract class Item : MonoBehaviour {
 
 	public void UnfreezePlayer() {
 		player.GetComponent<ClickToMove> ().enabled = true;	
+	}
+
+	public void AddToInventory() {
+		inventory.AddItem (this);
 	}
 }

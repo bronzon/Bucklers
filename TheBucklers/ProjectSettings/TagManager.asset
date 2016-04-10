@@ -10,6 +10,7 @@ TagManager:
   - Room
   - DialogueGui
   - Gui
+  - InventoryGui
   layers:
   - Default
   - TransparentFX
