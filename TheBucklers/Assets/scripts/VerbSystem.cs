@@ -10,6 +10,8 @@ public enum Verb {
 }
 
 public class VerbSystem : MonoBehaviour {
+	GameObject player;
+
 	private Verb currentVerb = Verb.WALK;
 
 	public Verb CurrentVerb {
@@ -23,11 +25,16 @@ public class VerbSystem : MonoBehaviour {
 
 	public void SetCurrentVerb (string verb) {
 		currentVerb = (Verb)System.Enum.Parse (typeof(Verb), verb);
+		if (currentVerb != Verb.WALK) {
+			player.GetComponent<ClickToMove> ().StopPlayer ();
+			player.GetComponent<ClickToMove> ().enabled = false;	
+		}
 	}
 
 	// Use this for initialization
 	void Start () {
-	
+		player = GameObject.FindGameObjectWithTag ("Player");
+
 	}
 	
 	// Update is called once per frame

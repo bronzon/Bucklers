@@ -14,8 +14,10 @@ public class LeChuck : Dialogue {
 		thankYou.npcResponse = NpcResponse.Create ("You are welcome");
 	}
 
-	public override void LookAt () {
-		Text ("help me moma i'm scared");
+	public override void LookAt (InteractionComplete interactionComplete) {
+		Text ("help me moma i'm scared", null, null, 3, ()=> {
+			interactionComplete();
+		});
 	}
 
 }

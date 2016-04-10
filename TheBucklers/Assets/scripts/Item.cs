@@ -24,16 +24,28 @@ public abstract class Item : MonoBehaviour {
 	public void Click () {
 		switch (verbSystem.CurrentVerb) {
 		case(Verb.USE):
-			Use (null);
+			MoveToInteractionPoint (() => {
+				Use (null);
+			});
 			break;
 		case(Verb.LOOK_AT):
-			LookAt ();
+			MoveToInteractionPoint (() => {
+				LookAt(() => {
+					UnfreezePlayer();
+				});
+			});
 			break;
 		case(Verb.PICK_UP):
-			PickUp ();
+			MoveToInteractionPoint (() => {
+				PickUp ();
+			});
 			break;
 		case(Verb.TALK_TO):
-			TalkTo ();
+			MoveToInteractionPoint (() => {
+				TalkTo (()=> {
+					UnfreezePlayer();
+				});
+			});
 			break;
 		default:
 			Debug.Log ("current verb not implemented: " + verbSystem.CurrentVerb.ToString());
@@ -72,7 +84,7 @@ public abstract class Item : MonoBehaviour {
 		return "";
 	}
 
-	public virtual void TalkTo() {
+	public virtual void TalkTo(InteractionComplete interactionComplete) {
 
 	}
 
@@ -89,7 +101,8 @@ public abstract class Item : MonoBehaviour {
 	}
 
 
-	public virtual void LookAt() {
+	public virtual void LookAt(InteractionComplete interactionComplete) {
+			
 	}
 
 	public void Text(string text, Vector2? pos = null, Color? color = null, float showForSeconds=3f, TextSystem.TextCallback callback = null) {
@@ -102,9 +115,20 @@ public abstract class Item : MonoBehaviour {
 		textSystem.WriteText (text, finalPos, color, showForSeconds, callback);
 	}
 
-	public void FreezePlayer() {
-		player.GetComponent<ClickToMove> ().StopPlayer ();
-		player.GetComponent<ClickToMove> ().enabled = false;	
+	public delegate void InteractionComplete ();
+
+	private void MoveToInteractionPoint(InteractionComplete reachedCallback) {
+		Vector2 target = new Vector2(transform.position.x + interactionPoint.localTransform.x, transform.position.y+interactionPoint.localTransform.y);
+
+		PolyNavAgent polyNavAgent = player.GetComponent<PolyNavAgent> ();
+		polyNavAgent.SetDestination (target);
+		System.Action action = null;
+		action =  () => {
+			polyNavAgent.OnDestinationReached -= action;
+			reachedCallback();
+		};
+		polyNavAgent.OnDestinationReached += action;
+
 	}
 
 	public void UnfreezePlayer() {

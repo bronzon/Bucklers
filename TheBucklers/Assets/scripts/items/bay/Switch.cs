@@ -7,8 +7,10 @@ public class Switch : Item {
 		FlipState ("bay.switch");
 	}
 
-	public override void LookAt () {
-		Text ("The switch that controls the bridge");
+	public override void LookAt (InteractionComplete interactionComplete) {
+		Text ("The switch that controls the bridge", null, null, 3, ()=> {
+			interactionComplete();
+		});
 	}
 
 }

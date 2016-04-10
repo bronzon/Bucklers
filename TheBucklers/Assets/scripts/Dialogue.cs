@@ -43,24 +43,23 @@ public abstract class Dialogue : Item {
 		CreateDialogue ();
 	}
 
-	public override void TalkTo () {
-		ShowDialogue (lines);
+	public override void TalkTo ( InteractionComplete interactionComplete) {
+		ShowDialogue (lines, interactionComplete);
 	}
 
-	private void ShowDialogue(List<CharacterLine> lines) {
-		FreezePlayer ();
+	private void ShowDialogue(List<CharacterLine> lines, InteractionComplete interactionComplete) {
 		gui.ShowDialogue (lines, (CharacterLine selectedLine) => {
 			Text(selectedLine.text, null, null, 3.0f, ()=> {
 				if(selectedLine.npcResponse != null && selectedLine.npcResponse.npcText != "") {
 					Text(selectedLine.npcResponse.npcText, transform.position, null, 3, () => {
 						if(selectedLine.npcResponse.characterResponses.Count > 0) {
-							ShowDialogue(selectedLine.npcResponse.characterResponses);
+							ShowDialogue(selectedLine.npcResponse.characterResponses, interactionComplete);
 						} else {
-							UnfreezePlayer();
+							interactionComplete();
 						}
 					});
 				} else {
-					UnfreezePlayer();
+					interactionComplete();
 				}
 			});
 		});

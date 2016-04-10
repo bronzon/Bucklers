@@ -7,7 +7,9 @@ public class JukeBox : Item {
 		Text("Woppa gangnam style");
 	}
 
-	public override void LookAt () {
-		Text ("The jukebox looks filled with power ballads from the 70ies");
+	public override void LookAt (InteractionComplete interactionComplete) {
+		Text ("The jukebox looks filled with power ballads from the 70ies", null, null, 3, ()=> { 
+			interactionComplete();
+		});
 	}
 }
