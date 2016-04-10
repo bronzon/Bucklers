@@ -13,11 +13,14 @@ public abstract class Item : MonoBehaviour {
 
 	private VerbSystem verbSystem;
 	private TextSystem textSystem;
+	private GameState gameState;
+
 	private GameObject player;
 	private InteractionPoint interactionPoint;
 	private Inventory inventory;
 
 	public delegate void VerbExecutedCallback ();
+
 	public void Click () {
 		switch (verbSystem.CurrentVerb) {
 		case(Verb.USE):
@@ -36,6 +39,8 @@ public abstract class Item : MonoBehaviour {
 			Debug.Log ("current verb not implemented: " + verbSystem.CurrentVerb.ToString());
 			break;
 		}
+
+		verbSystem.CurrentVerb = Verb.WALK; 
 	}
 
 	// Use this for initialization
@@ -43,13 +48,24 @@ public abstract class Item : MonoBehaviour {
 		this.verbSystem = GameObject.FindGameObjectWithTag ("VerbSystem").GetComponent<VerbSystem> ();
 		this.textSystem = GameObject.FindGameObjectWithTag ("TextSystem").GetComponent<TextSystem> ();
 		this.inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
+		this.gameState = GameState.Instance;
+
 		this.player = GameObject.FindGameObjectWithTag ("Player");
 		GetComponent<BoxCollider2D> ().isTrigger = true;
 		interactionPoint = GetComponent<InteractionPoint> ();
 	
+
 		SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer> ();
 		spriteRenderer.sortingOrder = -(int)(transform.position.y * 100);
 	
+	}
+
+	void Update() {
+		if (!movable) {
+			return;
+		}
+		SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer> ();
+		spriteRenderer.sortingOrder = -(int)(transform.position.y * 100);
 	}
 
 	public virtual string GetName(){
@@ -70,7 +86,6 @@ public abstract class Item : MonoBehaviour {
 		} else {
 			textSystem.WriteText ("I can't pick that up", player.transform.position);
 		}
-
 	}
 
 
@@ -87,14 +102,6 @@ public abstract class Item : MonoBehaviour {
 		textSystem.WriteText (text, finalPos, color, showForSeconds, callback);
 	}
 
-	void Update() {
-		if (!movable) {
-			return;
-		}
-		SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer> ();
-		spriteRenderer.sortingOrder = -(int)(transform.position.y * 100);
-	}
-
 	public void FreezePlayer() {
 		player.GetComponent<ClickToMove> ().StopPlayer ();
 		player.GetComponent<ClickToMove> ().enabled = false;	
@@ -106,5 +113,17 @@ public abstract class Item : MonoBehaviour {
 
 	public void AddToInventory() {
 		inventory.AddItem (this);
+	}
+
+	public void SetState(string name, bool set) {
+		gameState.SetState (name, set);
+	}
+
+	public bool FlipState(string name, bool ifNoValueIsSet=true) {
+		return gameState.FlipState (name, ifNoValueIsSet);
+	}
+
+	public bool GetState(string name, bool defaultValue=false) {
+		return gameState.GetState (name, defaultValue);
 	}
 }
