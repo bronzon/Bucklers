@@ -34,5 +34,9 @@ public class ClickToMove : MonoBehaviour{
 			}
 
 		}
+		if (agent.currentSpeed > 0) {
+			SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer> ();
+			spriteRenderer.sortingOrder = -(int)(transform.position.y * 100);
+		}
 	}
 }

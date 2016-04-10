@@ -3,9 +3,11 @@ using System.Collections;
 
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(InteractionPoint))]
+[RequireComponent(typeof(SpriteRenderer))]
 public abstract class Item : MonoBehaviour {
 
 	public bool pickable;
+	public bool movable = false;
 	[HideInInspector]
 	public Sprite icon;
 
@@ -45,6 +47,9 @@ public abstract class Item : MonoBehaviour {
 		GetComponent<BoxCollider2D> ().isTrigger = true;
 		interactionPoint = GetComponent<InteractionPoint> ();
 	
+		SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer> ();
+		spriteRenderer.sortingOrder = -(int)(transform.position.y * 100);
+	
 	}
 
 	public virtual string GetName(){
@@ -68,6 +73,7 @@ public abstract class Item : MonoBehaviour {
 
 	}
 
+
 	public virtual void LookAt() {
 	}
 
@@ -79,6 +85,14 @@ public abstract class Item : MonoBehaviour {
 			finalPos = (Vector2)pos;
 		}
 		textSystem.WriteText (text, finalPos, color, showForSeconds, callback);
+	}
+
+	void Update() {
+		if (!movable) {
+			return;
+		}
+		SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer> ();
+		spriteRenderer.sortingOrder = -(int)(transform.position.y * 100);
 	}
 
 	public void FreezePlayer() {
