@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class Switch : Item {
-	public override void Use (Item with) {
-		Text ("The switch makes a clicking noise");
+	public override IEnumerator Use (Item with) {
+		yield return StartCoroutine(Text ("The switch makes a clicking noise"));
 		FlipState ("bay.switch");
 	}
 

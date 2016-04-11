@@ -24,8 +24,9 @@ public abstract class Item : MonoBehaviour {
 	public IEnumerator Click () {
 		switch (verbSystem.CurrentVerb) {
 		case(Verb.USE):
-			MoveToInteractionPoint ();
-			Use (null);
+			yield return StartCoroutine (MoveToInteractionPoint ());
+			yield return StartCoroutine (Use (null));
+			UnfreezePlayer();
 			break;
 		case(Verb.LOOK_AT):
 			yield return StartCoroutine (MoveToInteractionPoint ());
@@ -34,11 +35,11 @@ public abstract class Item : MonoBehaviour {
 			UnfreezePlayer();
 			break;
 		case(Verb.PICK_UP):
-			MoveToInteractionPoint ();
+			yield return StartCoroutine (MoveToInteractionPoint ());
 			PickUp ();
 			break;
 		case(Verb.TALK_TO):
-			MoveToInteractionPoint ();
+			yield return StartCoroutine (MoveToInteractionPoint ());
 			TalkTo (()=> {
 				UnfreezePlayer();
 			});
@@ -84,8 +85,8 @@ public abstract class Item : MonoBehaviour {
 
 	}
 
-	public virtual void Use (Item with) {
-		textSystem.WriteText ("I can't use that", player.transform.position);
+	public virtual IEnumerator Use (Item with) {
+		return textSystem.WriteText ("I can't use that", player.transform.position);
 	}
 
 	public virtual void PickUp () {
