@@ -7,16 +7,9 @@ public class Switch : Item {
 		FlipState ("bay.switch");
 	}
 
-	private bool looking = false;
-	public override IEnumerator LookAt () {
-		looking = true;
-		Text ("The switch that controls the bridge", null, null, 3, ()=> {
-			looking = false;
-		});
 
-		yield return new WaitUntil (() => {
-			return !looking;
-		});
+	public override IEnumerator LookAt () {
+		yield return StartCoroutine(Text ("The switch that controls the bridge", null, null, 3));
 	}
 
 }

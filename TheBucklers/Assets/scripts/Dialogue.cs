@@ -48,6 +48,7 @@ public abstract class Dialogue : Item {
 	}
 
 	private void ShowDialogue(List<CharacterLine> lines, InteractionComplete interactionComplete) {
+		/*
 		gui.ShowDialogue (lines, (CharacterLine selectedLine) => {
 			Text(selectedLine.text, null, null, 3.0f, ()=> {
 				if(selectedLine.npcResponse != null && selectedLine.npcResponse.npcText != "") {
@@ -63,6 +64,7 @@ public abstract class Dialogue : Item {
 				}
 			});
 		});
+		*/
 	}
 	public abstract void CreateDialogue();
 }

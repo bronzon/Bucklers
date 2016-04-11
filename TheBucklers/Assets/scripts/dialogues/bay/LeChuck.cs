@@ -14,16 +14,8 @@ public class LeChuck : Dialogue {
 		thankYou.npcResponse = NpcResponse.Create ("You are welcome");
 	}
 
-	private bool looking;
 	public override IEnumerator LookAt () {
-		looking = true;
-		Text ("help me moma i'm scared", null, null, 3, ()=> {
-			looking = false;
-		});
-
-		yield return new WaitUntil (() => {
-			return !looking;
-		});
+		yield return StartCoroutine(Text ("help me moma i'm scared", null, null, 3));
 	}
 
 }

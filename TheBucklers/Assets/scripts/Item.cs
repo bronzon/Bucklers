@@ -101,14 +101,14 @@ public abstract class Item : MonoBehaviour {
 		yield return null;			
 	}
 
-	public void Text(string text, Vector2? pos = null, Color? color = null, float showForSeconds=3f, TextSystem.TextCallback callback = null) {
+	public IEnumerator Text(string text, Vector2? pos = null, Color? color = null, float showForSeconds=3f) {
 		Vector2 finalPos; 
 		if (pos == null) {
 			finalPos = new Vector2(player.transform.position.x, player.transform.position.y);
 		} else {
 			finalPos = (Vector2)pos;
 		}
-		textSystem.WriteText (text, finalPos, color, showForSeconds, callback);
+		return textSystem.WriteText (text, finalPos, color, showForSeconds);
 	}
 
 	public delegate void InteractionComplete ();
