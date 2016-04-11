@@ -8,7 +8,7 @@ public class ItemClick : MonoBehaviour {
 			if (hit.collider != null) {
 				Item item = hit.collider.gameObject.GetComponent<Item> ();
 				if (item != null) {
-					item.Click ();
+					StartCoroutine(item.Click ());
 				}
 			}
 		}

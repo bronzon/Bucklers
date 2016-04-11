@@ -14,9 +14,15 @@ public class LeChuck : Dialogue {
 		thankYou.npcResponse = NpcResponse.Create ("You are welcome");
 	}
 
-	public override void LookAt (InteractionComplete interactionComplete) {
+	private bool looking;
+	public override IEnumerator LookAt () {
+		looking = true;
 		Text ("help me moma i'm scared", null, null, 3, ()=> {
-			interactionComplete();
+			looking = false;
+		});
+
+		yield return new WaitUntil (() => {
+			return !looking;
 		});
 	}
 

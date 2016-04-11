@@ -21,30 +21,26 @@ public abstract class Item : MonoBehaviour {
 
 	public delegate void VerbExecutedCallback ();
 
-	public void Click () {
+	public IEnumerator Click () {
 		switch (verbSystem.CurrentVerb) {
 		case(Verb.USE):
-			MoveToInteractionPoint (() => {
-				Use (null);
-			});
+			MoveToInteractionPoint ();
+			Use (null);
 			break;
 		case(Verb.LOOK_AT):
-			MoveToInteractionPoint (() => {
-				LookAt(() => {
-					UnfreezePlayer();
-				});
-			});
+			yield return StartCoroutine (MoveToInteractionPoint ());
+			yield return StartCoroutine (LookAt ());
+			yield return new WaitForSeconds (0.2f);
+			UnfreezePlayer();
 			break;
 		case(Verb.PICK_UP):
-			MoveToInteractionPoint (() => {
-				PickUp ();
-			});
+			MoveToInteractionPoint ();
+			PickUp ();
 			break;
 		case(Verb.TALK_TO):
-			MoveToInteractionPoint (() => {
-				TalkTo (()=> {
-					UnfreezePlayer();
-				});
+			MoveToInteractionPoint ();
+			TalkTo (()=> {
+				UnfreezePlayer();
 			});
 			break;
 		default:
@@ -101,8 +97,8 @@ public abstract class Item : MonoBehaviour {
 	}
 
 
-	public virtual void LookAt(InteractionComplete interactionComplete) {
-			
+	public virtual IEnumerator LookAt() {
+		yield return null;			
 	}
 
 	public void Text(string text, Vector2? pos = null, Color? color = null, float showForSeconds=3f, TextSystem.TextCallback callback = null) {
@@ -117,7 +113,10 @@ public abstract class Item : MonoBehaviour {
 
 	public delegate void InteractionComplete ();
 
-	private void MoveToInteractionPoint(InteractionComplete reachedCallback) {
+	private bool movingToInteractionPoint = false;
+
+	private IEnumerator MoveToInteractionPoint() {
+		movingToInteractionPoint = true;
 		Vector2 target = new Vector2(transform.position.x + interactionPoint.localTransform.x, transform.position.y+interactionPoint.localTransform.y);
 
 		PolyNavAgent polyNavAgent = player.GetComponent<PolyNavAgent> ();
@@ -125,10 +124,10 @@ public abstract class Item : MonoBehaviour {
 		System.Action action = null;
 		action =  () => {
 			polyNavAgent.OnDestinationReached -= action;
-			reachedCallback();
+			movingToInteractionPoint = false;
 		};
 		polyNavAgent.OnDestinationReached += action;
-
+		yield return new WaitUntil(()=> { return !movingToInteractionPoint;});
 	}
 
 	public void UnfreezePlayer() {

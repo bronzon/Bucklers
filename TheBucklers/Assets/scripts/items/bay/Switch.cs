@@ -7,9 +7,15 @@ public class Switch : Item {
 		FlipState ("bay.switch");
 	}
 
-	public override void LookAt (InteractionComplete interactionComplete) {
+	private bool looking = false;
+	public override IEnumerator LookAt () {
+		looking = true;
 		Text ("The switch that controls the bridge", null, null, 3, ()=> {
-			interactionComplete();
+			looking = false;
+		});
+
+		yield return new WaitUntil (() => {
+			return !looking;
 		});
 	}
 
