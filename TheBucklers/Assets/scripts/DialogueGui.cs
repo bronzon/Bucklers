@@ -19,16 +19,21 @@ public class DialogueGui : MonoBehaviour {
 			button.transform.parent = transform;
 			button.transform.position = transform.position;
 			button.transform.Translate(new Vector3(0,i*-30,0));
-			button.onClick.AddListener(() => {
-				Clear();
-				selectedLine.text = line.text;
-				selectedLine.npcResponse = line.npcResponse;
-				showingGui = false;
-			});
+			button.onClick.AddListener(Functor(selectedLine, line));
 		}
 		yield return new WaitUntil (() => {
 			return showingGui == false;
 		});
+	}
+
+	private UnityEngine.Events.UnityAction Functor(CharacterLine selectedLine, CharacterLine line) {
+		return () => {
+			Clear ();
+			selectedLine.text = line.text;
+			selectedLine.npcResponse = line.npcResponse;
+			selectedLine.action = line.action;
+			showingGui = false;
+		};
 	}
 
 	public void Clear() {

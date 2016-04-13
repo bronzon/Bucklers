@@ -6,7 +6,7 @@ public class LeChuck : Dialogue {
 	public override void CreateDialogue () {
 		AddLine("Prepare to die!").npcResponse = NpcResponse.Create("I am not impressed, ok bye");
 
-		CharacterLine goldLine = AddLine ("Give me all yer gold!");
+		CharacterLine goldLine = AddLine ("Give me all yer gold!", FSetState("bay.gold", true));
 		goldLine.npcResponse = NpcResponse.Create ("ok");
 		goldLine.npcResponse.characterResponses.Add (CharacterLine.Create ("woho I rule"));
 		CharacterLine thankYou = CharacterLine.Create ("Thank you sir");

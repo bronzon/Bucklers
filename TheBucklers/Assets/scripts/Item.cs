@@ -142,6 +142,12 @@ public abstract class Item : MonoBehaviour {
 		gameState.SetState (name, set);
 	}
 
+	public System.Action FSetState(string name, bool set) {
+		return () => {
+			SetState (name, set);
+		};
+	}
+
 	public bool FlipState(string name, bool ifNoValueIsSet=true) {
 		return gameState.FlipState (name, ifNoValueIsSet);
 	}
