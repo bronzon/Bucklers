@@ -40,9 +40,8 @@ public abstract class Item : MonoBehaviour {
 			break;
 		case(Verb.TALK_TO):
 			yield return StartCoroutine (MoveToInteractionPoint ());
-			TalkTo (()=> {
-				UnfreezePlayer();
-			});
+			yield return StartCoroutine (TalkTo ());
+			UnfreezePlayer();
 			break;
 		default:
 			Debug.Log ("current verb not implemented: " + verbSystem.CurrentVerb.ToString());
@@ -81,8 +80,8 @@ public abstract class Item : MonoBehaviour {
 		return "";
 	}
 
-	public virtual void TalkTo(InteractionComplete interactionComplete) {
-
+	public virtual IEnumerator TalkTo() {
+		yield break;
 	}
 
 	public virtual IEnumerator Use (Item with) {
@@ -99,7 +98,7 @@ public abstract class Item : MonoBehaviour {
 
 
 	public virtual IEnumerator LookAt() {
-		yield return null;			
+		yield break;			
 	}
 
 	public IEnumerator Text(string text, Vector2? pos = null, Color? color = null, float showForSeconds=3f) {

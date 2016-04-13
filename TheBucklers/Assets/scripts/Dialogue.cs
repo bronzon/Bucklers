@@ -18,10 +18,17 @@ public class CharacterLine {
 	public static CharacterLine Create (string text) {
 		return new CharacterLine (text);
 	}
+
 	private CharacterLine (string text) {
 		this.text = text;
 	}
 
+	public static CharacterLine Create () {
+		return new CharacterLine ();
+	}
+
+	private CharacterLine() {
+	}
 	public NpcResponse npcResponse;
 	public string text;
 	public bool enabled = true;
@@ -43,28 +50,31 @@ public abstract class Dialogue : Item {
 		CreateDialogue ();
 	}
 
-	public override void TalkTo ( InteractionComplete interactionComplete) {
-		ShowDialogue (lines, interactionComplete);
+	public override System.Collections.IEnumerator TalkTo () {
+		return ShowDialogue (lines);
 	}
 
-	private void ShowDialogue(List<CharacterLine> lines, InteractionComplete interactionComplete) {
-		/*
-		gui.ShowDialogue (lines, (CharacterLine selectedLine) => {
-			Text(selectedLine.text, null, null, 3.0f, ()=> {
-				if(selectedLine.npcResponse != null && selectedLine.npcResponse.npcText != "") {
-					Text(selectedLine.npcResponse.npcText, transform.position, null, 3, () => {
-						if(selectedLine.npcResponse.characterResponses.Count > 0) {
-							ShowDialogue(selectedLine.npcResponse.characterResponses, interactionComplete);
-						} else {
-							interactionComplete();
-						}
-					});
-				} else {
-					interactionComplete();
-				}
-			});
+	private bool talkingCompleted = true;
+
+	private System.Collections.IEnumerator ShowDialogue(List<CharacterLine> characterLines) {
+		talkingCompleted = false;
+		CharacterLine selectedLine = CharacterLine.Create ();
+		yield return StartCoroutine (gui.ShowDialogue (characterLines, selectedLine));
+		yield return StartCoroutine (Text (selectedLine.text, null, null, 3.0f));
+		if (selectedLine.npcResponse != null && selectedLine.npcResponse.npcText != "") {
+			yield return StartCoroutine (Text (selectedLine.npcResponse.npcText, transform.position, null, 3));
+			if (selectedLine.npcResponse.characterResponses.Count > 0) {
+				yield return ShowDialogue (selectedLine.npcResponse.characterResponses);
+			} else {
+				talkingCompleted = true;
+			}
+		} else {
+			talkingCompleted = true;
+		}
+		yield return new WaitUntil (() => {
+			return talkingCompleted;
 		});
-		*/
 	}
+
 	public abstract void CreateDialogue();
 }

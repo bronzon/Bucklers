@@ -1,12 +1,16 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+public struct LineSelectedCallback {
+	public CharacterLine line;
+}
 
 public class DialogueGui : MonoBehaviour {
 	public GameObject textButtonPrefab;
-	public delegate void LineSelectedCallback(CharacterLine line);
 
-	public void ShowDialogue(List<CharacterLine> lines, LineSelectedCallback callback) {
+	private bool showingGui = false;
+	public System.Collections.IEnumerator ShowDialogue(List<CharacterLine> lines, CharacterLine selectedLine) {
+		showingGui = true;
 		for (int i = 0; i < lines.Count; i++) {
 			var line = lines [i];
 			GameObject buttonGO = GameObject.Instantiate (textButtonPrefab) as GameObject;
@@ -17,9 +21,14 @@ public class DialogueGui : MonoBehaviour {
 			button.transform.Translate(new Vector3(0,i*-30,0));
 			button.onClick.AddListener(() => {
 				Clear();
-				callback(line);
+				selectedLine.text = line.text;
+				selectedLine.npcResponse = line.npcResponse;
+				showingGui = false;
 			});
 		}
+		yield return new WaitUntil (() => {
+			return showingGui == false;
+		});
 	}
 
 	public void Clear() {
