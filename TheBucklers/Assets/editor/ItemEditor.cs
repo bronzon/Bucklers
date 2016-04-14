@@ -8,7 +8,9 @@ public class ItemEditor : Editor {
 		Item item = target as Item;
 		if (item.pickable) {
 			EditorGUILayout.LabelField ("Inventory icon");
-			item.icon = EditorGUILayout.ObjectField (item.icon, typeof(Sprite), false) as Sprite;
+			item.inventoryIcon = EditorGUILayout.ObjectField (item.inventoryIcon, typeof(Sprite), false) as Sprite;
+			item.inventoryLookatText = EditorGUILayout.TextField ("My item in my inventory"); 
+			item.inventoryId =  EditorGUILayout.TextField ("Unique Object Id"); 
 		}
 
 	}

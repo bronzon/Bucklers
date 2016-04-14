@@ -577,9 +577,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7859395433dc93c4394e3c3dbce8f148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickable: 0
   movable: 0
-  icon: {fileID: 0}
+  pickable: 1
+  inventoryId: Unique Object Id
+  inventoryIcon: {fileID: 21300214, guid: 3b340236fdb05a248b504665f35ad5b9, type: 3}
+  inventoryLookatText: My item in my inventory
 --- !u!114 &937568884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -859,9 +861,28 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 796993968}
+    - target: {fileID: 11433392, guid: 3ab5b9bfbf0f8ef41b26380a038b4746, type: 2}
+      propertyPath: inventoryItemPrefab
+      value: 
+      objectReference: {fileID: 177674, guid: 0b1f35c9050d37e43a22fb8ac2e94fb1, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ab5b9bfbf0f8ef41b26380a038b4746, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1092191303 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 170246, guid: 3ab5b9bfbf0f8ef41b26380a038b4746, type: 2}
+  m_PrefabInternal: {fileID: 1092191302}
+--- !u!114 &1092191304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1092191303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04ec7d4c281d3274180b083367b2c939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1211517795
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,9 +955,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be3cb41f2f0fe7543b287f84bd11fe81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickable: 0
   movable: 0
-  icon: {fileID: 0}
+  pickable: 0
+  inventoryId: 
+  inventoryIcon: {fileID: 0}
+  inventoryLookatText: 
 --- !u!61 &1211517799
 BoxCollider2D:
   m_ObjectHideFlags: 0

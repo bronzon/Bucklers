@@ -2,12 +2,10 @@
 using System.Collections.Generic;
 
 public class Inventory : MonoBehaviour {
-	private List<Item> items = new List<Item>();
 	private InventoryGui gui;
 
-	public void AddItem(Item item) {
-		items.Add (item);
-		gui.Add (item);
+	public void AddItem(Item inventoryItem) {
+		gui.Add (inventoryItem.inventoryId, inventoryItem.inventoryLookatText, inventoryItem.inventoryIcon);
 	}
 		
 	void Start () {

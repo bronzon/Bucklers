@@ -13,6 +13,16 @@ public class VerbSystem : MonoBehaviour {
 	GameObject player;
 
 	private Verb currentVerb = Verb.WALK;
+	private InventoryItem usingItemId = null;
+
+	public InventoryItem UsingItemId {
+		get {
+			return this.usingItemId;
+		}
+		set {
+			usingItemId = value;
+		}
+	}
 
 	public Verb CurrentVerb {
 		get {

@@ -6,10 +6,16 @@ using System.Collections;
 [RequireComponent(typeof(SpriteRenderer))]
 public abstract class Item : MonoBehaviour {
 
-	public bool pickable;
+
 	public bool movable = false;
+
+	public bool pickable = false;
 	[HideInInspector]
-	public Sprite icon;
+	public string inventoryId;
+	[HideInInspector]
+	public Sprite inventoryIcon;
+	[HideInInspector]
+	public string inventoryLookatText;
 
 	private VerbSystem verbSystem;
 	private TextSystem textSystem;
@@ -90,7 +96,8 @@ public abstract class Item : MonoBehaviour {
 
 	public virtual void PickUp () {
 		if (pickable) {
-			AddToInventory ();
+			AddToInventory (this);
+			Destroy(this.gameObject);
 		} else {
 			textSystem.WriteText ("I can't pick that up", player.transform.position);
 		}
@@ -134,8 +141,8 @@ public abstract class Item : MonoBehaviour {
 		player.GetComponent<ClickToMove> ().enabled = true;	
 	}
 
-	public void AddToInventory() {
-		inventory.AddItem (this);
+	public void AddToInventory(Item item) {
+		inventory.AddItem (item);
 	}
 
 	public void SetState(string name, bool set) {

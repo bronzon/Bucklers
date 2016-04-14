@@ -1,12 +1,19 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class InventoryGui : MonoBehaviour {
-	public void Add(Item item) {
-		item.gameObject.GetComponent<SpriteRenderer> ().sprite = item.icon;
-		item.gameObject.transform.parent = this.transform;
-		item.gameObject.transform.position = this.transform.position;
+	public GameObject inventoryItemPrefab;
 
+	public void Add(string name, string lookatText, Sprite icon) {
+		GameObject instance = GameObject.Instantiate (inventoryItemPrefab);
+		instance.GetComponent<Image> ().sprite = icon;
+		instance.transform.parent = transform;
+		instance.transform.position = transform.position;
+		instance.AddComponent<BoxCollider2D> ();
+		InventoryItem ii = instance.AddComponent<InventoryItem> ();
+		ii.id = name;
+		ii.lookAtText = lookatText;
 	}
 
 
