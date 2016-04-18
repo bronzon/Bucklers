@@ -32,6 +32,7 @@ public abstract class Item : MonoBehaviour {
 		case(Verb.USE):
 			yield return StartCoroutine (MoveToInteractionPoint ());
 			yield return StartCoroutine (Use (null));
+			yield return new WaitForSeconds (0.2f);
 			UnfreezePlayer();
 			break;
 		case(Verb.LOOK_AT):
@@ -42,11 +43,12 @@ public abstract class Item : MonoBehaviour {
 			break;
 		case(Verb.PICK_UP):
 			yield return StartCoroutine (MoveToInteractionPoint ());
-			PickUp ();
+			yield return StartCoroutine(PickUp ());
 			break;
 		case(Verb.TALK_TO):
 			yield return StartCoroutine (MoveToInteractionPoint ());
 			yield return StartCoroutine (TalkTo ());
+			yield return new WaitForSeconds (0.2f);
 			UnfreezePlayer();
 			break;
 		default:
@@ -94,12 +96,15 @@ public abstract class Item : MonoBehaviour {
 		return textSystem.WriteText ("I can't use that", player.transform.position);
 	}
 
-	public virtual void PickUp () {
+	public virtual IEnumerator PickUp () {
 		if (pickable) {
 			AddToInventory (this);
-			Destroy(this.gameObject);
+			yield return new WaitForSeconds (0.2f);
+			UnfreezePlayer();
+			GameObject.Destroy (this.gameObject);
 		} else {
-			textSystem.WriteText ("I can't pick that up", player.transform.position);
+			yield return textSystem.WriteText ("I can't pick that up", player.transform.position);
+			UnfreezePlayer();
 		}
 	}
 

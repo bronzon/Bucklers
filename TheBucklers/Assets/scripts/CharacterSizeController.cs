@@ -6,9 +6,8 @@ public class CharacterSizeController : MonoBehaviour {
 	public float minAtUnits = 5;
 	public float maxScale = 5;
 	public float minScale = 1;
-
-	public SpeedScale scalable;
-
+	[HideInInspector]
+	public float scalePercentage = 1;
 	void Start () {
 		
 	}
@@ -16,13 +15,12 @@ public class CharacterSizeController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		float unitDiff = Mathf.Abs(maxAtUnits - minAtUnits);
-		float playerY = scalable.transform.position.y;
+		float playerY = transform.position.y;
 		float distanceTravelledFromMin = Mathf.Abs(Mathf.Clamp(playerY, maxAtUnits, minAtUnits) - minAtUnits);
-		float scalePercentage = distanceTravelledFromMin / unitDiff;
+		scalePercentage = distanceTravelledFromMin / unitDiff;
 		float scaleDiff = maxScale - minScale;
 		float scaledOffset = scaleDiff * scalePercentage;
 		float calculatedScale = scaledOffset + minScale;
-		scalable.transform.localScale = new Vector3 (calculatedScale, calculatedScale);
-		scalable.Scale = scalePercentage;
+		transform.localScale = new Vector3 (calculatedScale, calculatedScale);
 	}
 }

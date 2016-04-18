@@ -1,16 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
-[RequireComponent(typeof(SpeedScale))]
+[RequireComponent(typeof(CharacterSizeController))]
 public class PlayerController : MonoBehaviour {
 	public float baseSpeed = 1;
-	private SpeedScale speedScale;
 	private Animator animator;
-
+	private CharacterSizeController sizeController;
 
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator>();
-		speedScale = GetComponent<SpeedScale>();
+		sizeController = GetComponent <CharacterSizeController> ();
 	}
 
 	// Update is called once per frame
@@ -31,7 +30,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		if (direction.magnitude > float.Epsilon) {
-			float actualSpeed = speedScale.Scale * baseSpeed;
+			float actualSpeed = sizeController.scalePercentage * baseSpeed;
 			Vector2 estimatedPos = new Vector2(transform.position.x + direction.x*actualSpeed, transform.position.y + direction.y*actualSpeed);
 			RaycastHit2D hit = Physics2D.Linecast (transform.position, estimatedPos, 1 << LayerMask.NameToLayer("Background"));
 			if (hit.collider == null) {
