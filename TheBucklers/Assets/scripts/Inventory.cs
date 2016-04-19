@@ -4,8 +4,8 @@ using System.Collections.Generic;
 public class Inventory : MonoBehaviour {
 	private InventoryGui gui;
 
-	public void AddItem(Item inventoryItem) {
-		gui.Add (inventoryItem.inventoryId, inventoryItem.inventoryLookatText, inventoryItem.inventoryIcon);
+	public void AddItem(string inventoryId, string inventoryLookAtText, Sprite inventoryIcon) {
+		gui.Add (inventoryId, inventoryLookAtText, inventoryIcon);
 	}
 		
 	void Start () {

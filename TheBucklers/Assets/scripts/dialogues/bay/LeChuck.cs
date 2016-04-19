@@ -18,4 +18,12 @@ public class LeChuck : Dialogue {
 		yield return StartCoroutine(Text ("help me moma i'm scared", null, null, 3));
 	}
 
+	public override IEnumerator Use(InventoryItem inventoryItem) {
+		if (inventoryItem.id == "grogg") {
+			return Text ("Thanks I like grog", transform.position);
+		} else {
+			return base.Use (inventoryItem);
+		}
+	}
+
 }

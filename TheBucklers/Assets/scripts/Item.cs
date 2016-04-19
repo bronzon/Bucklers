@@ -31,7 +31,7 @@ public abstract class Item : MonoBehaviour {
 		switch (verbSystem.CurrentVerb) {
 		case(Verb.USE):
 			yield return StartCoroutine (MoveToInteractionPoint ());
-			yield return StartCoroutine (Use (null));
+			yield return StartCoroutine (Use (verbSystem.SelectedItem));
 			yield return new WaitForSeconds (0.2f);
 			UnfreezePlayer();
 			break;
@@ -92,13 +92,13 @@ public abstract class Item : MonoBehaviour {
 		yield break;
 	}
 
-	public virtual IEnumerator Use (Item with) {
+	public virtual IEnumerator Use (InventoryItem with) {
 		return textSystem.WriteText ("I can't use that", player.transform.position);
 	}
 
 	public virtual IEnumerator PickUp () {
 		if (pickable) {
-			AddToInventory (this);
+			inventory.AddItem (inventoryId, inventoryLookatText, inventoryIcon);
 			yield return new WaitForSeconds (0.2f);
 			UnfreezePlayer();
 			GameObject.Destroy (this.gameObject);
@@ -146,8 +146,9 @@ public abstract class Item : MonoBehaviour {
 		player.GetComponent<ClickToMove> ().enabled = true;	
 	}
 
-	public void AddToInventory(Item item) {
-		inventory.AddItem (item);
+	public void AddToInventory(string inventoryId, string inventoryLookAtText, string inventoryIcon) {
+		Sprite icon = Resources.Load (inventoryIcon) as Sprite;
+		inventory.AddItem (inventoryId, inventoryLookatText, icon);
 	}
 
 	public void SetState(string name, bool set) {

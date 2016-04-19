@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(BoxCollider2D))]
 public class InventoryItem : MonoBehaviour {
 	public string id;
 	public string lookAtText;
@@ -19,7 +20,7 @@ public class InventoryItem : MonoBehaviour {
 	public void Click () {
 		switch (verbSystem.CurrentVerb) {
 		case(Verb.USE):
-			verbSystem.UsingItemId = this;
+			verbSystem.SelectedItem = this;
 			break;
 		case(Verb.LOOK_AT):
 			StartCoroutine(textSystem.WriteText (lookAtText, new Vector2 (player.transform.position.x, player.transform.position.y)));

@@ -13,14 +13,14 @@ public class VerbSystem : MonoBehaviour {
 	GameObject player;
 
 	private Verb currentVerb = Verb.WALK;
-	private InventoryItem usingItemId = null;
+	private InventoryItem selectedItem = null;
 
-	public InventoryItem UsingItemId {
+	public InventoryItem SelectedItem {
 		get {
-			return this.usingItemId;
+			return this.selectedItem;
 		}
 		set {
-			usingItemId = value;
+			selectedItem = value;
 		}
 	}
 

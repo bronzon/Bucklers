@@ -10,7 +10,6 @@ public class InventoryGui : MonoBehaviour {
 		instance.GetComponent<Image> ().sprite = icon;
 		instance.transform.parent = transform;
 		instance.transform.position = transform.position;
-		instance.AddComponent<BoxCollider2D> ();
 		InventoryItem ii = instance.AddComponent<InventoryItem> ();
 		ii.id = name;
 		ii.lookAtText = lookatText;

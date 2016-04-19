@@ -163,6 +163,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 22421344}
   - 114: {fileID: 11433392}
+  - 114: {fileID: 11423744}
   m_Layer: 5
   m_Name: InventoryGui
   m_TagString: InventoryGui
@@ -450,6 +451,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GuiIsBelowScreenSpaceCoord: 63
+--- !u!114 &11423744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04ec7d4c281d3274180b083367b2c939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11433392
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -461,6 +473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 650e43582fd87c4489f9d87a243e437f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryItemPrefab: {fileID: 177674, guid: 0b1f35c9050d37e43a22fb8ac2e94fb1, type: 2}
 --- !u!114 &11436010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -830,7 +843,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 244, y: -202}
+  m_AnchoredPosition: {x: 45, y: -131}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22429010
@@ -973,7 +986,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -111, y: -34}
+  m_AnchoredPosition: {x: -111, y: -1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22482520
