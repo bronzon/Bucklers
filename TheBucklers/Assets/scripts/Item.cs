@@ -31,7 +31,13 @@ public abstract class Item : MonoBehaviour {
 		switch (verbSystem.CurrentVerb) {
 		case(Verb.USE):
 			yield return StartCoroutine (MoveToInteractionPoint ());
-			yield return StartCoroutine (Use (verbSystem.SelectedItem));
+
+			if (verbSystem.SelectedItem != null) {
+				yield return StartCoroutine (Use (verbSystem.SelectedItem));
+			} else {
+				yield return StartCoroutine (Use ());
+			}
+
 			yield return new WaitForSeconds (0.2f);
 			UnfreezePlayer();
 			break;
@@ -90,6 +96,10 @@ public abstract class Item : MonoBehaviour {
 
 	public virtual IEnumerator TalkTo() {
 		yield break;
+	}
+
+	public virtual IEnumerator Use () {
+		return textSystem.WriteText ("I can't use that", player.transform.position);
 	}
 
 	public virtual IEnumerator Use (InventoryItem with) {

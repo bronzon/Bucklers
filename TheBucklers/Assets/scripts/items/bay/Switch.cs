@@ -2,14 +2,9 @@
 using System.Collections;
 
 public class Switch : Item {
-	public override IEnumerator Use (InventoryItem with) {
-		if (with == null) {
-			yield return StartCoroutine (Text ("The switch makes a clicking noise"));
-			FlipState ("bay.switch");
-		} else {
-			yield break;
-		}
-
+	public override IEnumerator Use () {
+		yield return StartCoroutine (Text ("The switch makes a clicking noise"));
+		FlipState ("bay.switch");
 	}
 
 

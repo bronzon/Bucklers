@@ -21,9 +21,7 @@ public class LeChuck : Dialogue {
 	public override IEnumerator Use(InventoryItem inventoryItem) {
 		if (inventoryItem.id == "grogg") {
 			return Text ("Thanks I like grog", transform.position);
-		} else {
-			return base.Use (inventoryItem);
-		}
+		} 
 	}
 
 }
