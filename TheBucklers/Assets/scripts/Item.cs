@@ -26,10 +26,19 @@ public abstract class Item : MonoBehaviour {
 
 	protected ScriptEngine scriptEngine;
 
+	private IEnumerator Interact() {
+		yield return StartCoroutine (scriptEngine.MoveTo (new Vector2 (transform.position.x + interactionPoint.localTransform.x, transform.position.y + interactionPoint.localTransform.y)));
+		if (interactionPoint.isLeftInteraction) {
+			player.transform.localRotation = Quaternion.Euler (0, 180, 0);
+		} else {
+			player.transform.localRotation = Quaternion.Euler(0, 0, 0);
+		}
+	}
+
 	public IEnumerator Click () {
 		switch (verbSystem.CurrentVerb) {
 		case(Verb.USE):
-			yield return StartCoroutine (scriptEngine.MoveTo(new Vector2(transform.position.x + interactionPoint.localTransform.x, transform.position.y+interactionPoint.localTransform.y)));
+			yield return StartCoroutine (Interact ());
 			if (verbSystem.SelectedItem != null) {
 				yield return StartCoroutine (Use (verbSystem.SelectedItem));
 			} else {
