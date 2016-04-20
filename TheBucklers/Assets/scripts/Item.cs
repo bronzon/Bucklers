@@ -19,6 +19,9 @@ public abstract class Item : MonoBehaviour {
 	public string inventoryLookatText;
 
 	private InteractionPoint interactionPoint;
+
+	GameObject player;
+
 	private VerbSystem verbSystem;
 
 	protected ScriptEngine scriptEngine;
@@ -70,6 +73,7 @@ public abstract class Item : MonoBehaviour {
 		this.verbSystem = GameObject.FindGameObjectWithTag ("VerbSystem").GetComponent<VerbSystem>();
 		SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer> ();
 		spriteRenderer.sortingOrder = -(int)(transform.position.y * 100);
+		this.player = GameObject.FindGameObjectWithTag ("Player");
 	}
 
 	void Update() {
@@ -102,9 +106,9 @@ public abstract class Item : MonoBehaviour {
 
 	public virtual IEnumerator PickUp () {
 		if (pickable) {
+			player.GetComponent<Animator> ().SetTrigger ("reach");
 			scriptEngine.AddToInventory (inventoryId, inventoryLookatText, inventoryIcon);
-			yield return new WaitForSeconds (0.2f);
-			scriptEngine.UnfreezePlayer();
+			yield return new WaitForSeconds (1f);
 			GameObject.Destroy (this.gameObject);
 		} else {
 			yield return scriptEngine.PlayerText("I can't pick that up");

@@ -1,0 +1,1658 @@
+fileFormatVersion: 2
+guid: ef46fb455b5688044a6cfc52af786a25
+timeCreated: 1460315558
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Guybrush_0
+    21300002: Guybrush_1
+    21300004: Guybrush_2
+    21300006: Guybrush_3
+    21300008: Guybrush_4
+    21300010: Guybrush_5
+    21300012: Guybrush_6
+    21300014: Guybrush_7
+    21300016: Guybrush_8
+    21300018: Guybrush_9
+    21300020: Guybrush_10
+    21300022: Guybrush_11
+    21300024: Guybrush_12
+    21300026: Guybrush_13
+    21300028: Guybrush_14
+    21300030: Guybrush_15
+    21300032: Guybrush_16
+    21300034: Guybrush_17
+    21300036: Guybrush_18
+    21300038: Guybrush_19
+    21300040: Guybrush_20
+    21300042: Guybrush_21
+    21300044: Guybrush_22
+    21300046: Guybrush_23
+    21300048: Guybrush_24
+    21300050: Guybrush_25
+    21300052: Guybrush_26
+    21300054: Guybrush_27
+    21300056: Guybrush_28
+    21300058: Guybrush_29
+    21300060: Guybrush_30
+    21300062: Guybrush_31
+    21300064: Guybrush_32
+    21300066: Guybrush_33
+    21300068: Guybrush_34
+    21300070: Guybrush_35
+    21300072: Guybrush_36
+    21300074: Guybrush_37
+    21300076: Guybrush_38
+    21300078: Guybrush_39
+    21300080: Guybrush_40
+    21300082: Guybrush_41
+    21300084: Guybrush_42
+    21300086: Guybrush_43
+    21300088: Guybrush_44
+    21300090: Guybrush_45
+    21300092: Guybrush_46
+    21300094: Guybrush_47
+    21300096: Guybrush_48
+    21300098: Guybrush_49
+    21300100: Guybrush_50
+    21300102: Guybrush_51
+    21300104: Guybrush_52
+    21300106: Guybrush_53
+    21300108: Guybrush_54
+    21300110: Guybrush_55
+    21300112: Guybrush_56
+    21300114: Guybrush_57
+    21300116: Guybrush_58
+    21300118: Guybrush_59
+    21300120: Guybrush_60
+    21300122: Guybrush_61
+    21300124: Guybrush_62
+    21300126: Guybrush_63
+    21300128: Guybrush_64
+    21300130: Guybrush_65
+    21300132: Guybrush_66
+    21300134: Guybrush_67
+    21300136: Guybrush_68
+    21300138: Guybrush_69
+    21300140: Guybrush_70
+    21300142: Guybrush_71
+    21300144: Guybrush_72
+    21300146: Guybrush_73
+    21300148: Guybrush_74
+    21300150: Guybrush_75
+    21300152: Guybrush_76
+    21300154: Guybrush_77
+    21300156: Guybrush_78
+    21300158: Guybrush_79
+    21300160: Guybrush_80
+    21300162: Guybrush_81
+    21300164: Guybrush_82
+    21300166: Guybrush_83
+    21300168: Guybrush_84
+    21300170: Guybrush_85
+    21300172: Guybrush_86
+    21300174: Guybrush_87
+    21300176: Guybrush_88
+    21300178: Guybrush_89
+    21300180: Guybrush_90
+    21300182: Guybrush_91
+    21300184: Guybrush_92
+    21300186: Guybrush_93
+    21300188: Guybrush_94
+    21300190: Guybrush_95
+    21300192: Guybrush_96
+    21300194: Guybrush_97
+    21300196: Guybrush_98
+    21300198: Guybrush_99
+    21300200: Guybrush_100
+    21300202: Guybrush_101
+    21300204: Guybrush_102
+    21300206: Guybrush_103
+    21300208: Guybrush_104
+    21300210: Guybrush_105
+    21300212: Guybrush_106
+    21300214: Guybrush_107
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Guybrush_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 899
+        width: 23
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 899
+        width: 23
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_2
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 899
+        width: 23
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 899
+        width: 23
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_4
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 899
+        width: 23
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_5
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 899
+        width: 23
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_6
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 843
+        width: 26
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_7
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 843
+        width: 26
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_8
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 843
+        width: 26
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_9
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 843
+        width: 26
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_10
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 843
+        width: 26
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_11
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 843
+        width: 26
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 788
+        width: 26
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_13
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 788
+        width: 26
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_14
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 788
+        width: 26
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_15
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 788
+        width: 21
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_16
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 788
+        width: 19
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_17
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 788
+        width: 32
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 45}
+        - {x: -16, y: 43}
+        - {x: -16, y: 0}
+        - {x: 16, y: 0}
+        - {x: 16, y: 39}
+        - {x: 14, y: 45}
+    - name: Guybrush_18
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 788
+        width: 18
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_19
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 788
+        width: 19
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_20
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 788
+        width: 31
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_21
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 733
+        width: 24
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_22
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 733
+        width: 25
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_23
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 733
+        width: 28
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_24
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 733
+        width: 24
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_25
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 733
+        width: 25
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_26
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 733
+        width: 28
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_27
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 677
+        width: 24
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_28
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 677
+        width: 25
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_29
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 677
+        width: 27
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_30
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 677
+        width: 24
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_31
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 677
+        width: 25
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_32
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 677
+        width: 28
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 623
+        width: 33
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 0}
+        - {x: 9.5, y: 4}
+        - {x: 16.5, y: 23}
+        - {x: 16.5, y: 32}
+        - {x: 8.5, y: 47}
+        - {x: -7.5, y: 47}
+        - {x: -16.5, y: 34}
+        - {x: -16.5, y: 9}
+        - {x: -15.5, y: 0}
+        - {x: -4.5, y: 0}
+        - {x: -4.5, y: 2}
+        - {x: -4.5, y: 0}
+    - name: Guybrush_34
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 623
+        width: 35
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 0}
+        - {x: 9.5, y: 4}
+        - {x: 17.5, y: 34}
+        - {x: 17.5, y: 47}
+        - {x: -8.5, y: 47}
+        - {x: -17.5, y: 36}
+        - {x: -17.5, y: 14}
+        - {x: -15.5, y: 0}
+        - {x: -4.5, y: 0}
+        - {x: -4.5, y: 2}
+        - {x: -4.5, y: 0}
+    - name: Guybrush_35
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 623
+        width: 34
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 33}
+        - {x: -17, y: 29}
+        - {x: -17, y: 0}
+        - {x: 17, y: 0}
+        - {x: 17, y: 33}
+    - name: Guybrush_36
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 623
+        width: 26
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_37
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 623
+        width: 27
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_38
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 623
+        width: 28
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_39
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 568
+        width: 25
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_40
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 568
+        width: 28
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_41
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 568
+        width: 37
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 35}
+        - {x: -18.5, y: 28}
+        - {x: -18.5, y: 0}
+        - {x: 8.5, y: 0}
+        - {x: 18.5, y: 8}
+        - {x: 18.5, y: 21}
+        - {x: 10.5, y: 35}
+    - name: Guybrush_42
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 568
+        width: 37
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.5, y: 0}
+        - {x: 18.5, y: 22}
+        - {x: 18.5, y: 44}
+        - {x: 14.5, y: 47}
+        - {x: -12.5, y: 47}
+        - {x: -18.5, y: 35}
+        - {x: -18.5, y: 9}
+        - {x: -17.5, y: 0}
+        - {x: -6.5, y: 0}
+        - {x: -6.5, y: 2}
+        - {x: -6.5, y: 0}
+    - name: Guybrush_43
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 568
+        width: 26
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_44
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 568
+        width: 34
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 48}
+        - {x: -17, y: 33}
+        - {x: -17, y: 14}
+        - {x: -13, y: 0}
+        - {x: 15, y: 0}
+        - {x: 17, y: 12}
+        - {x: 17, y: 33}
+        - {x: 8, y: 48}
+    - name: Guybrush_45
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 514
+        width: 28
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_46
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 514
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 48}
+        - {x: -10, y: 47}
+        - {x: -16, y: 33}
+        - {x: -16, y: 13}
+        - {x: -13, y: 0}
+        - {x: 16, y: 0}
+        - {x: 16, y: 29}
+        - {x: 8, y: 48}
+    - name: Guybrush_47
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 514
+        width: 31
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_48
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 514
+        width: 33
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.5, y: 47}
+        - {x: -8.5, y: 47}
+        - {x: -16.5, y: 37}
+        - {x: -16.5, y: 10}
+        - {x: -15.5, y: 0}
+        - {x: 12.5, y: 0}
+        - {x: 16.5, y: 24}
+        - {x: 16.5, y: 37}
+    - name: Guybrush_49
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 514
+        width: 36
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 47}
+        - {x: -10, y: 47}
+        - {x: -18, y: 37}
+        - {x: -18, y: 10}
+        - {x: -17, y: 0}
+        - {x: 11, y: 0}
+        - {x: 18, y: 14}
+        - {x: 18, y: 35}
+    - name: Guybrush_50
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 514
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 34}
+        - {x: 7, y: 45}
+        - {x: 4, y: 48}
+        - {x: -10, y: 48}
+        - {x: -16, y: 37}
+        - {x: -16, y: 10}
+        - {x: -12, y: 0}
+        - {x: 15, y: 0}
+        - {x: 16, y: 9}
+        - {x: 16, y: 33}
+    - name: Guybrush_51
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 514
+        width: 24
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_52
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 514
+        width: 26
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_53
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 458
+        width: 24
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_54
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 458
+        width: 27
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_55
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 458
+        width: 31
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_56
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 458
+        width: 24
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_57
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 458
+        width: 23
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_58
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 458
+        width: 23
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_59
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 458
+        width: 23
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_60
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 458
+        width: 26
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_61
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 401
+        width: 23
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_62
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 401
+        width: 27
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_63
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 401
+        width: 26
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_64
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 401
+        width: 30
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_65
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 401
+        width: 29
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_66
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 401
+        width: 31
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_67
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 401
+        width: 30
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_68
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 401
+        width: 41
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: 42}
+        - {x: -20.5, y: 20}
+        - {x: -20.5, y: 9}
+        - {x: -19.5, y: 5}
+        - {x: -5.5, y: 0}
+        - {x: 20.5, y: 0}
+        - {x: 20.5, y: 35}
+        - {x: 16.5, y: 42}
+    - name: Guybrush_69
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 343
+        width: 23
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_70
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 343
+        width: 23
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_71
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 343
+        width: 24
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_72
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 343
+        width: 25
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_73
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 343
+        width: 34
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 40}
+        - {x: -17, y: 34}
+        - {x: -17, y: 10}
+        - {x: -13, y: 0}
+        - {x: 15, y: 0}
+        - {x: 17, y: 4}
+        - {x: 17, y: 40}
+    - name: Guybrush_74
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 382
+        width: 15
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_75
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 343
+        width: 24
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_76
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 343
+        width: 25
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_77
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 343
+        width: 25
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_78
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 287
+        width: 25
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_79
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 287
+        width: 27
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_80
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 287
+        width: 28
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_81
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 287
+        width: 41
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 47}
+        - {x: -20.5, y: 11}
+        - {x: -17.5, y: 0}
+        - {x: 20.5, y: 0}
+        - {x: 20.5, y: 40}
+        - {x: 7.5, y: 47}
+    - name: Guybrush_82
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 287
+        width: 39
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: 49}
+        - {x: -19.5, y: 49}
+        - {x: -19.5, y: 3}
+        - {x: -13.5, y: 0}
+        - {x: 10.5, y: 0}
+        - {x: 16.5, y: 5}
+        - {x: 19.5, y: 16}
+        - {x: 19.5, y: 48}
+    - name: Guybrush_83
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 287
+        width: 36
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 47}
+        - {x: -18, y: 47}
+        - {x: -18, y: 0}
+        - {x: 13, y: 0}
+        - {x: 17, y: 4}
+        - {x: 18, y: 7}
+        - {x: 18, y: 39}
+    - name: Guybrush_84
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 287
+        width: 34
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 45}
+        - {x: -17, y: 5}
+        - {x: -14, y: 0}
+        - {x: 17, y: 0}
+        - {x: 17, y: 45}
+    - name: Guybrush_85
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 238
+        width: 42
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 42}
+        - {x: -21, y: 40}
+        - {x: -21, y: 29}
+        - {x: -5, y: 15}
+        - {x: 15, y: 0}
+        - {x: 21, y: 0}
+        - {x: 21, y: 29}
+        - {x: 7, y: 42}
+    - name: Guybrush_86
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 238
+        width: 44
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 32}
+        - {x: -22, y: 31}
+        - {x: -22, y: 26}
+        - {x: -14, y: 19}
+        - {x: 5, y: 0}
+        - {x: 22, y: 0}
+        - {x: 22, y: 19}
+        - {x: 5, y: 32}
+    - name: Guybrush_87
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 238
+        width: 50
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 38}
+        - {x: -25, y: 30}
+        - {x: -25, y: 0}
+        - {x: 3, y: 0}
+        - {x: 25, y: 18}
+        - {x: 25, y: 36}
+        - {x: 23, y: 38}
+    - name: Guybrush_88
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 238
+        width: 52
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_89
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 180
+        width: 32
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 50}
+        - {x: -4, y: 49}
+        - {x: -4, y: 46}
+        - {x: -4, y: 48}
+        - {x: -5, y: 50}
+        - {x: -8, y: 50}
+        - {x: -13, y: 49}
+        - {x: -16, y: 46}
+        - {x: -16, y: 1}
+        - {x: -13, y: 0}
+        - {x: 16, y: 0}
+        - {x: 16, y: 50}
+    - name: Guybrush_90
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 180
+        width: 43
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 43}
+        - {x: -21.5, y: 40}
+        - {x: -21.5, y: 21}
+        - {x: -20.5, y: 16}
+        - {x: -8.5, y: 0}
+        - {x: 10.5, y: 0}
+        - {x: 21.5, y: 8}
+        - {x: 21.5, y: 28}
+        - {x: 2.5, y: 43}
+    - name: Guybrush_91
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 180
+        width: 48
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 37}
+        - {x: -20, y: 37}
+        - {x: -24, y: 32}
+        - {x: -24, y: 14}
+        - {x: -5, y: 0}
+        - {x: 24, y: 0}
+        - {x: 24, y: 23}
+    - name: Guybrush_92
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 180
+        width: 51
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.5, y: 32}
+        - {x: 1.5, y: 27}
+        - {x: -4.5, y: 27}
+        - {x: -15.5, y: 25}
+        - {x: -25.5, y: 18}
+        - {x: -25.5, y: 11}
+        - {x: -23.5, y: 10}
+        - {x: -25.5, y: 6}
+        - {x: -25.5, y: 0}
+        - {x: 6.5, y: 0}
+        - {x: 18.5, y: 2}
+        - {x: 25.5, y: 4}
+        - {x: 25.5, y: 32}
+    - name: Guybrush_93
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 180
+        width: 44
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 41}
+        - {x: -7, y: 41}
+        - {x: -18, y: 37}
+        - {x: -22, y: 25}
+        - {x: -22, y: 7}
+        - {x: -14, y: 0}
+        - {x: 6, y: 0}
+        - {x: 18, y: 11}
+        - {x: 22, y: 24}
+        - {x: 22, y: 40}
+    - name: Guybrush_94
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 180
+        width: 42
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 42}
+        - {x: -21, y: 26}
+        - {x: -21, y: 1}
+        - {x: -17, y: 0}
+        - {x: 1, y: 0}
+        - {x: 12, y: 7}
+        - {x: 21, y: 22}
+        - {x: 21, y: 42}
+    - name: Guybrush_95
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 126
+        width: 40
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 43}
+        - {x: -20, y: 34}
+        - {x: -20, y: 0}
+        - {x: 7, y: 0}
+        - {x: 17, y: 12}
+        - {x: 20, y: 26}
+        - {x: 20, y: 43}
+    - name: Guybrush_96
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 126
+        width: 39
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 44}
+        - {x: -19.5, y: 39}
+        - {x: -19.5, y: 4}
+        - {x: -18.5, y: 0}
+        - {x: 19.5, y: 0}
+        - {x: 19.5, y: 44}
+    - name: Guybrush_97
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 126
+        width: 40
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 45}
+        - {x: -20, y: 43}
+        - {x: -20, y: 4}
+        - {x: -19, y: 1}
+        - {x: -11, y: 0}
+        - {x: 11, y: 0}
+        - {x: 20, y: 16}
+        - {x: 20, y: 40}
+        - {x: 17, y: 45}
+    - name: Guybrush_98
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 126
+        width: 38
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_99
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 126
+        width: 40
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 38}
+        - {x: -20, y: 23}
+        - {x: -20, y: 7}
+        - {x: -16, y: 0}
+        - {x: 6, y: 0}
+        - {x: 20, y: 19}
+        - {x: 20, y: 36}
+        - {x: 18, y: 38}
+    - name: Guybrush_100
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 126
+        width: 39
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.5, y: 45}
+        - {x: -11.5, y: 35}
+        - {x: -19.5, y: 26}
+        - {x: -19.5, y: 10}
+        - {x: 2.5, y: 0}
+        - {x: 16.5, y: 0}
+        - {x: 19.5, y: 2}
+        - {x: 19.5, y: 29}
+        - {x: 14.5, y: 45}
+    - name: Guybrush_101
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 75
+        width: 45
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 40}
+        - {x: -22.5, y: 18}
+        - {x: -4.5, y: 0}
+        - {x: 22.5, y: 0}
+        - {x: 22.5, y: 30}
+        - {x: 8.5, y: 40}
+    - name: Guybrush_102
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 82
+        width: 60
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Guybrush_103
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 79
+        width: 69
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.5, y: 10}
+        - {x: 16.5, y: 11}
+        - {x: 20.5, y: 8}
+        - {x: 26.5, y: 5}
+        - {x: 30.5, y: 5}
+        - {x: 34.5, y: 10}
+        - {x: 34.5, y: 19}
+        - {x: -1.5, y: 33}
+        - {x: -27.5, y: 33}
+        - {x: -31.5, y: 26}
+        - {x: -34.5, y: 19}
+        - {x: -34.5, y: 7}
+        - {x: -33.5, y: 7}
+        - {x: 4.5, y: 0}
+        - {x: 15.5, y: 0}
+        - {x: 20.5, y: 5}
+        - {x: 20.5, y: 7}
+        - {x: 17.5, y: 10}
+    - name: Guybrush_104
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 79
+        width: 54
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 39}
+        - {x: -27, y: 15}
+        - {x: -27, y: 7}
+        - {x: -18, y: 1}
+        - {x: -6, y: 0}
+        - {x: 21, y: 0}
+        - {x: 27, y: 2}
+        - {x: 27, y: 14}
+        - {x: 3, y: 39}
+    - name: Guybrush_105
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 24
+        width: 33
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 33}
+        - {x: -16.5, y: 0}
+        - {x: 16.5, y: 0}
+        - {x: 16.5, y: 33}
+    - name: Guybrush_106
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 23
+        width: 38
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 46}
+        - {x: -12, y: 45}
+        - {x: -19, y: 32}
+        - {x: -19, y: 0}
+        - {x: 11, y: 0}
+        - {x: 19, y: 10}
+        - {x: 19, y: 39}
+        - {x: 13, y: 46}
+    - name: Guybrush_107
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 4
+        width: 128
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 59}
+        - {x: -64, y: 0}
+        - {x: 64, y: 0}
+        - {x: 64, y: 59}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
