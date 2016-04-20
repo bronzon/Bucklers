@@ -4,7 +4,6 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class TextSystem : MonoBehaviour {
-	public Color defaultColor;
 	public int textOffsetFromCamera = 100;
 
 	private Queue<string> sentenceQueue = new Queue<string> ();
@@ -21,8 +20,11 @@ public class TextSystem : MonoBehaviour {
 
 	public System.Collections.IEnumerator WriteText (List<string> sentences, Vector2 where, Color? color = null, float showSentenceForSeconds = 3f) {
 		ClampTextInRoom (ref where);
+		Color selectedColor;
 		if (color != null) {
-			color = defaultColor;
+			selectedColor = (Color)color;
+		} else {
+			selectedColor = Color.white;
 		}
 
 		sentenceQueue.Clear();
@@ -36,12 +38,14 @@ public class TextSystem : MonoBehaviour {
 		Text text = GetComponentInChildren<Text> ();
 
 		text.text = sentenceQueue.Dequeue ();
+		text.color = selectedColor;
 
 		yield return new WaitForSeconds (showSentenceForSeconds);
 
 		while (sentenceQueue.Count > 0) {
 			Text textComponent = GetComponent<Text> ();
 			textComponent.text = sentenceQueue.Dequeue();
+			textComponent.color = selectedColor;
 			yield return new WaitForSeconds (showSentenceForSeconds);
 		}
 

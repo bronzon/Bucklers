@@ -42,7 +42,7 @@ public class CharacterLine {
 
 public abstract class Dialogue : Item {
 	private DialogueGui gui;
-
+	public Color speachColor = Color.blue;
 	public List<CharacterLine> lines = new List<CharacterLine>();
 
 	protected CharacterLine AddLine(string text, Action action = null) {
@@ -77,7 +77,7 @@ public abstract class Dialogue : Item {
 			if (selectedLine.npcResponse.action != null) {
 				selectedLine.npcResponse.action (); //replace with func that returns coroutine
 			}
-			yield return StartCoroutine (scriptEngine.NpcText (selectedLine.npcResponse.npcText));
+			yield return StartCoroutine (scriptEngine.NpcText (selectedLine.npcResponse.npcText, speachColor));
 			if (selectedLine.npcResponse.characterResponses.Count > 0) {
 				yield return ShowDialogue (selectedLine.npcResponse.characterResponses);
 			} else {

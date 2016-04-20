@@ -49,19 +49,19 @@ public abstract class Item : MonoBehaviour {
 			scriptEngine.UnfreezePlayer();
 			break;
 		case(Verb.LOOK_AT):
-			yield return StartCoroutine (scriptEngine.MoveTo(new Vector2(transform.position.x + interactionPoint.localTransform.x, transform.position.y+interactionPoint.localTransform.y)));
+			yield return StartCoroutine (Interact ());
 			yield return StartCoroutine (LookAt ());
 			yield return new WaitForSeconds (0.2f);
 			scriptEngine.UnfreezePlayer();
 			break;
 		case(Verb.PICK_UP):
-			yield return StartCoroutine (scriptEngine.MoveTo(new Vector2(transform.position.x + interactionPoint.localTransform.x, transform.position.y+interactionPoint.localTransform.y)));
+			yield return StartCoroutine (Interact ());
 			yield return StartCoroutine(PickUp ());
 			yield return new WaitForSeconds (0.2f);
 			scriptEngine.UnfreezePlayer();
 			break;
 		case(Verb.TALK_TO):
-			yield return StartCoroutine (scriptEngine.MoveTo(new Vector2(transform.position.x + interactionPoint.localTransform.x, transform.position.y+interactionPoint.localTransform.y)));
+			yield return StartCoroutine (Interact ());
 			yield return StartCoroutine (TalkTo ());
 			yield return new WaitForSeconds (0.2f);
 			scriptEngine.UnfreezePlayer();
