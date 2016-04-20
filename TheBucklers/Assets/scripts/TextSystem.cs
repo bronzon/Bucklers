@@ -5,7 +5,14 @@ using System.Collections.Generic;
 
 public class TextSystem : MonoBehaviour {
 	public Color defaultColor;
+	public int textOffsetFromCamera = 100;
+
 	private Queue<string> sentenceQueue = new Queue<string> ();
+	private RoomBounds roomBounds;
+
+	void Start() {
+		roomBounds = GameObject.FindGameObjectWithTag ("Room").GetComponent<RoomBounds>();
+	}
 
 	public System.Collections.IEnumerator WriteText(string text, Vector2 where, Color? color = null, float showSentenceForSeconds = 3f) {
 		List<string> sentences = new List<string> { text };
@@ -13,6 +20,7 @@ public class TextSystem : MonoBehaviour {
 	}
 
 	public System.Collections.IEnumerator WriteText (List<string> sentences, Vector2 where, Color? color = null, float showSentenceForSeconds = 3f) {
+		ClampTextInRoom (ref where);
 		if (color != null) {
 			color = defaultColor;
 		}
@@ -26,6 +34,7 @@ public class TextSystem : MonoBehaviour {
 		GetComponent<Canvas> ().enabled = true;
 		transform.position = where;
 		Text text = GetComponentInChildren<Text> ();
+
 		text.text = sentenceQueue.Dequeue ();
 
 		yield return new WaitForSeconds (showSentenceForSeconds);
@@ -40,4 +49,9 @@ public class TextSystem : MonoBehaviour {
 
 	}
 
+	private void ClampTextInRoom (ref Vector2 where)	{
+		float textMin = roomBounds.cameraXMin - textOffsetFromCamera;
+		float textMax = roomBounds.cameraXMax + textOffsetFromCamera;
+		where.x = Mathf.Clamp(where.x, textMin, textMax);
+	}
 }

@@ -421,6 +421,10 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11415034, guid: eda93ef9da311ba4d97fea597db82430, type: 2}
+      propertyPath: textOffsetFromCamera
+      value: 70
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eda93ef9da311ba4d97fea597db82430, type: 2}
   m_IsPrefabParent: 0
