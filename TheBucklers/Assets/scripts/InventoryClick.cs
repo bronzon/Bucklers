@@ -9,7 +9,7 @@ public class InventoryClick : MonoBehaviour {
 			if (hit.collider != null) {
 				InventoryItem item = hit.collider.gameObject.GetComponent<InventoryItem> ();
 				if (item != null) {
-					item.Click ();
+					StartCoroutine(item.Click ());
 				}
 			}
 		}

@@ -52,7 +52,7 @@ public abstract class Dialogue : Item {
 	}
 
 	protected override void Start () {
-		base.Start ();
+		base.Start();
 		gui = GameObject.FindGameObjectWithTag ("DialogueGui").GetComponent<DialogueGui> ();
 		CreateDialogue ();
 	}
@@ -72,12 +72,12 @@ public abstract class Dialogue : Item {
 			selectedLine.action (); //replace with func that returns coroutine
 		}
 
-		yield return StartCoroutine (PlayerText (selectedLine.text));
+		yield return StartCoroutine (scriptEngine.PlayerText (selectedLine.text));
 		if (selectedLine.npcResponse != null && selectedLine.npcResponse.npcText != "") {
 			if (selectedLine.npcResponse.action != null) {
 				selectedLine.npcResponse.action (); //replace with func that returns coroutine
 			}
-			yield return StartCoroutine (NpcText (selectedLine.npcResponse.npcText));
+			yield return StartCoroutine (scriptEngine.NpcText (selectedLine.npcResponse.npcText));
 			if (selectedLine.npcResponse.characterResponses.Count > 0) {
 				yield return ShowDialogue (selectedLine.npcResponse.characterResponses);
 			} else {
