@@ -99,11 +99,11 @@ public abstract class Item : MonoBehaviour {
 	}
 
 	public virtual IEnumerator Use () {
-		return textSystem.WriteText ("I can't use that", player.transform.position);
+		return PlayerText ("I can't use that");
 	}
 
 	public virtual IEnumerator Use (InventoryItem with) {
-		return textSystem.WriteText ("I can't use that", player.transform.position);
+		return PlayerText ("I can't use that");
 	}
 
 	public virtual IEnumerator PickUp () {
@@ -113,7 +113,7 @@ public abstract class Item : MonoBehaviour {
 			UnfreezePlayer();
 			GameObject.Destroy (this.gameObject);
 		} else {
-			yield return textSystem.WriteText ("I can't pick that up", player.transform.position);
+			yield return PlayerText("I can't pick that up");
 			UnfreezePlayer();
 		}
 	}
@@ -123,14 +123,12 @@ public abstract class Item : MonoBehaviour {
 		yield break;			
 	}
 
-	public IEnumerator Text(string text, Vector2? pos = null, Color? color = null, float showForSeconds=3f) {
-		Vector2 finalPos; 
-		if (pos == null) {
-			finalPos = new Vector2(player.transform.position.x, player.transform.position.y);
-		} else {
-			finalPos = (Vector2)pos;
-		}
-		return textSystem.WriteText (text, finalPos, color, showForSeconds);
+	public IEnumerator NpcText(string text, Color? color = null, float showForSeconds=3f) {
+		return textSystem.WriteText (text, new Vector2(transform.position.x, transform.position.y+60), color, showForSeconds);
+	}
+
+	public IEnumerator PlayerText(string text, Color? color = null, float showForSeconds=3f) {
+		return textSystem.WriteText (text, new Vector2(player.transform.position.x, player.transform.position.y+60), color, showForSeconds);
 	}
 
 	public delegate void InteractionComplete ();

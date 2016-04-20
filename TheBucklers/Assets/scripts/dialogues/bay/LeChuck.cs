@@ -15,13 +15,15 @@ public class LeChuck : Dialogue {
 	}
 
 	public override IEnumerator LookAt () {
-		yield return StartCoroutine(Text ("help me moma i'm scared", null, null, 3));
+		yield return StartCoroutine(PlayerText ("help me moma i'm scared"));
 	}
 
 	public override IEnumerator Use(InventoryItem inventoryItem) {
 		if (inventoryItem.id == "grogg") {
-			return Text ("Thanks I like grog", transform.position);
-		} 
+			yield return NpcText ("Thanks I like grog");
+		} else {
+			yield break;
+		}
 	}
 
 }

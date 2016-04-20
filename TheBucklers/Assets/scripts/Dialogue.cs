@@ -72,12 +72,12 @@ public abstract class Dialogue : Item {
 			selectedLine.action (); //replace with func that returns coroutine
 		}
 
-		yield return StartCoroutine (Text (selectedLine.text, null, null, 3.0f));
+		yield return StartCoroutine (PlayerText (selectedLine.text));
 		if (selectedLine.npcResponse != null && selectedLine.npcResponse.npcText != "") {
 			if (selectedLine.npcResponse.action != null) {
 				selectedLine.npcResponse.action (); //replace with func that returns coroutine
 			}
-			yield return StartCoroutine (Text (selectedLine.npcResponse.npcText, transform.position, null, 3));
+			yield return StartCoroutine (NpcText (selectedLine.npcResponse.npcText));
 			if (selectedLine.npcResponse.characterResponses.Count > 0) {
 				yield return ShowDialogue (selectedLine.npcResponse.characterResponses);
 			} else {
