@@ -24,10 +24,10 @@ public abstract class Item : MonoBehaviour {
 
 	private VerbSystem verbSystem;
 
-	protected ScriptEngine scriptEngine;
+	protected ScriptEngine se;
 
 	private IEnumerator Interact() {
-		yield return StartCoroutine (scriptEngine.MoveTo (new Vector2 (transform.position.x + interactionPoint.localTransform.x, transform.position.y + interactionPoint.localTransform.y)));
+		yield return StartCoroutine (se.MoveTo (new Vector2 (transform.position.x + interactionPoint.localTransform.x, transform.position.y + interactionPoint.localTransform.y)));
 		if (interactionPoint.isLeftInteraction) {
 			player.transform.localRotation = Quaternion.Euler (0, 180, 0);
 		} else {
@@ -36,6 +36,7 @@ public abstract class Item : MonoBehaviour {
 	}
 
 	public IEnumerator Click () {
+		Debug.Log ("Started Click");
 		switch (verbSystem.CurrentVerb) {
 		case(Verb.USE):
 			yield return StartCoroutine (Interact ());
@@ -46,25 +47,40 @@ public abstract class Item : MonoBehaviour {
 			}
 		
 			yield return new WaitForSeconds (0.2f);
-			scriptEngine.UnfreezePlayer();
+			se.UnfreezePlayer();
 			break;
 		case(Verb.LOOK_AT):
 			yield return StartCoroutine (Interact ());
 			yield return StartCoroutine (LookAt ());
 			yield return new WaitForSeconds (0.2f);
-			scriptEngine.UnfreezePlayer();
+			se.UnfreezePlayer();
 			break;
 		case(Verb.PICK_UP):
 			yield return StartCoroutine (Interact ());
 			yield return StartCoroutine(PickUp ());
 			yield return new WaitForSeconds (0.2f);
-			scriptEngine.UnfreezePlayer();
+			se.UnfreezePlayer();
 			break;
 		case(Verb.TALK_TO):
+			Debug.Log ("Started Talk to");
 			yield return StartCoroutine (Interact ());
 			yield return StartCoroutine (TalkTo ());
 			yield return new WaitForSeconds (0.2f);
-			scriptEngine.UnfreezePlayer();
+			se.UnfreezePlayer ();
+			Debug.Log ("Ended Talking to");
+			break;
+		case(Verb.GIVE):
+			Debug.Log ("Started Give: " +verbSystem.SelectedItem.id);
+			if (verbSystem.SelectedItem != null) {
+				yield return StartCoroutine (Interact ());
+				Debug.Log ("interact complete");
+				yield return StartCoroutine (Give (verbSystem.SelectedItem));
+				yield return new WaitForSeconds (0.2f);
+				se.UnfreezePlayer();
+				Debug.Log ("Ended Give");
+			} else {
+				yield break;
+			}
 			break;
 		default:
 			Debug.Log ("current verb not implemented: " + verbSystem.CurrentVerb.ToString());
@@ -73,11 +89,15 @@ public abstract class Item : MonoBehaviour {
 
 		verbSystem.CurrentVerb = Verb.WALK; 
 	}
+		
+	public virtual IEnumerator Give (InventoryItem with) {
+		yield return se.PlayerText ("I don't think he wants that");
+	}
 
 	// Use this for initialization
-	protected virtual void Start () {
+	protected virtual void Awake () {
 		GetComponent<BoxCollider2D> ().isTrigger = true;
-		this.scriptEngine = GetComponent<ScriptEngine> ();
+		this.se = GetComponent<ScriptEngine> ();
 		interactionPoint = GetComponent<InteractionPoint> ();
 		this.verbSystem = GameObject.FindGameObjectWithTag ("VerbSystem").GetComponent<VerbSystem>();
 		SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer> ();
@@ -106,22 +126,23 @@ public abstract class Item : MonoBehaviour {
 	}
 
 	public virtual IEnumerator Use () {
-		return scriptEngine.PlayerText ("I can't use that");
+		return se.PlayerText ("I can't use that");
 	}
 
+
 	public virtual IEnumerator Use (InventoryItem with) {
-		return scriptEngine.PlayerText ("I can't use that");
+		return se.PlayerText ("I can't use that");
 	}
 
 	public virtual IEnumerator PickUp () {
 		if (pickable) {
 			player.GetComponent<Animator> ().SetTrigger ("reach");
-			scriptEngine.AddToInventory (inventoryId, inventoryLookatText, inventoryIcon);
-			yield return new WaitForSeconds (1f);
+			se.AddToInventory (inventoryId, inventoryLookatText, inventoryIcon);
+			yield return new WaitForSeconds (.2f);
 			GameObject.Destroy (this.gameObject);
 		} else {
-			yield return scriptEngine.PlayerText("I can't pick that up");
-			scriptEngine.UnfreezePlayer();
+			yield return se.PlayerText("I can't pick that up");
+			se.UnfreezePlayer();
 		}
 	}
 }

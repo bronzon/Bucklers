@@ -2,17 +2,6 @@
 using System.Collections.Generic;
 
 public class GameState : MonoBehaviour {
-	private static GameState instance;
-	public static GameState Instance {
-		get {
-			if (instance == null) {
-				instance = new GameState ();
-				GameObject.DontDestroyOnLoad (instance);
-			}
-			return instance;
-		}
-	}
-
 	private Dictionary<string, bool> stateByName = new Dictionary<string, bool> ();
 
 	public void SetState(string name, bool set) {

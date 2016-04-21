@@ -6,7 +6,8 @@ public enum Verb {
 	USE,
 	TALK_TO,
 	LOOK_AT,
-	PICK_UP
+	PICK_UP,
+	GIVE
 }
 
 public class VerbSystem : MonoBehaviour {
@@ -42,7 +43,7 @@ public class VerbSystem : MonoBehaviour {
 	}
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		player = GameObject.FindGameObjectWithTag ("Player");
 
 	}

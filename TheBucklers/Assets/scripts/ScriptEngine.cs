@@ -8,26 +8,30 @@ public class ScriptEngine : MonoBehaviour {
 	private GameState gameState;
 	private GameObject player;
 
-	void Start () {
+	void Awake () {
 		this.verbSystem = GameObject.FindGameObjectWithTag ("VerbSystem").GetComponent<VerbSystem> ();
 		this.textSystem = GameObject.FindGameObjectWithTag ("TextSystem").GetComponent<TextSystem> ();
 		this.inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
-		this.gameState = GameState.Instance;
+		this.gameState = GameObject.FindGameObjectWithTag ("GameState").GetComponent<GameState> ();
 		this.player = GameObject.FindGameObjectWithTag ("Player");	
 	}
 	
 
-	public IEnumerator NpcText(string text, Color? color = null, float showForSeconds=3f) {
-		return textSystem.WriteText (text, new Vector2(transform.position.x, transform.position.y+60), color, showForSeconds);
+	public IEnumerator NpcText(string text, Color? color = null) {
+		return textSystem.WriteText (text, new Vector2(transform.position.x, transform.position.y+60), color);
 	}
 
 	public IEnumerator PlayerText(string text, Color? color = null, float showForSeconds=3f) {
-		return textSystem.WriteText (text, new Vector2(player.transform.position.x, player.transform.position.y+60), color, showForSeconds);
+		return textSystem.WriteText (text, new Vector2(player.transform.position.x, player.transform.position.y+60), color);
 	}
 
 	private bool moving = false;
 
 	public IEnumerator MoveTo(Vector2 target) {
+		Vector2 distance = target - (Vector2)player.transform.position;
+		if (distance.magnitude < 1) {
+			yield break;
+		}
 		moving = true;
 		PolyNavAgent polyNavAgent = player.GetComponent<PolyNavAgent> ();
 		polyNavAgent.SetDestination (target);
@@ -53,13 +57,24 @@ public class ScriptEngine : MonoBehaviour {
 		inventory.AddItem (inventoryId, inventoryLookAtText, inventoryIcon);
 	}
 
-	public void SetState(string name, bool set) {
+	public void RemoveFromInventory (InventoryItem item) {
+		inventory.RemoveItem (item);
+	}
+
+	public void SetState(string name, bool set = true) {
 		gameState.SetState (name, set);
 	}
+
 
 	public System.Action FSetState(string name, bool set) {
 		return () => {
 			SetState (name, set);
+		};
+	}
+
+	public System.Action FGiveInventoryItem(string id, string lookAtText, string icon) {
+		return () => {
+			inventory.AddItem(id, lookAtText, icon);
 		};
 	}
 
@@ -69,5 +84,13 @@ public class ScriptEngine : MonoBehaviour {
 
 	public bool GetState(string name, bool defaultValue=false) {
 		return gameState.GetState (name, defaultValue);
+	}
+
+	public Predicate GameStatePredicate(string state, bool acceptedValue) {
+		return Predicates.GameStatePredicate (gameState, state, acceptedValue);
+	}
+
+	public Predicate InventoryPredicate(string itemId, bool shouldHave) {
+		return Predicates.InventoryPredicate (inventory, itemId, shouldHave);
 	}
 }

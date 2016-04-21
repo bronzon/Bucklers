@@ -23,6 +23,9 @@ public class InventoryItem : MonoBehaviour {
 		case(Verb.USE):
 			verbSystem.SelectedItem = this;
 			break;
+		case(Verb.GIVE):
+			verbSystem.SelectedItem = this;
+			break;
 		case(Verb.LOOK_AT):
 			yield return StartCoroutine(scriptEngine.PlayerText(lookAtText));
 			yield return new WaitForSeconds (0.2f);

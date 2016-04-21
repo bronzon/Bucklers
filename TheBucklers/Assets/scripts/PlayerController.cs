@@ -6,8 +6,7 @@ public class PlayerController : MonoBehaviour {
 	private Animator animator;
 	private CharacterSizeController sizeController;
 
-	// Use this for initialization
-	void Start () {
+	void Awake () {
 		animator = GetComponent<Animator>();
 		sizeController = GetComponent <CharacterSizeController> ();
 	}

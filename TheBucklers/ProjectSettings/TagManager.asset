@@ -11,6 +11,9 @@ TagManager:
   - DialogueGui
   - Gui
   - InventoryGui
+  - GameState
+  - Icons
+  - VerbsGui
   layers:
   - Default
   - TransparentFX
@@ -59,4 +62,7 @@ TagManager:
     locked: 0
   - name: text
     uniqueID: 805982715
+    locked: 0
+  - name: fg
+    uniqueID: 508811895
     locked: 0

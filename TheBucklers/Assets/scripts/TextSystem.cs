@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class TextSystem : MonoBehaviour {
 	public int textOffsetFromCamera = 100;
-
+	public float textSpeedInSecondsShown = 3;
 	private Queue<string> sentenceQueue = new Queue<string> ();
 	private RoomBounds roomBounds;
 
@@ -13,12 +13,12 @@ public class TextSystem : MonoBehaviour {
 		roomBounds = GameObject.FindGameObjectWithTag ("Room").GetComponent<RoomBounds>();
 	}
 
-	public System.Collections.IEnumerator WriteText(string text, Vector2 where, Color? color = null, float showSentenceForSeconds = 3f) {
+	public System.Collections.IEnumerator WriteText(string text, Vector2 where, Color? color = null) {
 		List<string> sentences = new List<string> { text };
-		return WriteText (sentences, where, color, showSentenceForSeconds);
+		return WriteText (sentences, where, color);
 	}
 
-	public System.Collections.IEnumerator WriteText (List<string> sentences, Vector2 where, Color? color = null, float showSentenceForSeconds = 3f) {
+	public System.Collections.IEnumerator WriteText (List<string> sentences, Vector2 where, Color? color = null) {
 		ClampTextInRoom (ref where);
 		Color selectedColor;
 		if (color != null) {
@@ -40,13 +40,13 @@ public class TextSystem : MonoBehaviour {
 		text.text = sentenceQueue.Dequeue ();
 		text.color = selectedColor;
 
-		yield return new WaitForSeconds (showSentenceForSeconds);
+		yield return new WaitForSeconds (textSpeedInSecondsShown);
 
 		while (sentenceQueue.Count > 0) {
 			Text textComponent = GetComponent<Text> ();
 			textComponent.text = sentenceQueue.Dequeue();
 			textComponent.color = selectedColor;
-			yield return new WaitForSeconds (showSentenceForSeconds);
+			yield return new WaitForSeconds (textSpeedInSecondsShown);
 		}
 
 		GetComponent<Canvas> ().enabled = false;

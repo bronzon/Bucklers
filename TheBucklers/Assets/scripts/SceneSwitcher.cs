@@ -5,13 +5,12 @@ using UnityEngine.Assertions;
 
 public class SceneSwitcher : MonoBehaviour {
 	public string sceneName;
-	public GameObject player;
+	private GameObject player;
 	// Use this for initialization
-	void Start () {
-	
+	void Awake () {
+		player = GameObject.FindGameObjectWithTag ("Player");
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		if (GetComponent<PolygonCollider2D>().OverlapPoint(player.GetComponent<Transform>().position)) {
 			SceneManager.LoadScene(sceneName);

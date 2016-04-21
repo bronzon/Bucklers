@@ -49,8 +49,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea65411f89caa1943b69b86d84041594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
   textOffsetFromCamera: 70
+  textSpeedInSecondsShown: 2
 --- !u!114 &11449360
 MonoBehaviour:
   m_ObjectHideFlags: 1
